@@ -9,7 +9,7 @@ type MainLayoutProps = {
 export const MainLayout = ({ children }: MainLayoutProps) => (
   <>
     <MainLayoutNavbar />
-    {children}
+    <main>{children}</main>
     <MainLayoutFooter />
   </>
 );

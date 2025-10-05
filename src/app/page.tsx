@@ -13,7 +13,7 @@ export default function Home() {
       <Portfolio />
       <Experience />
       <Skills />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 }

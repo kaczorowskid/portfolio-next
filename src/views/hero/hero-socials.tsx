@@ -1,24 +1,24 @@
 import { Badge } from "@/components";
-import { Github, Mail } from "lucide-react";
+import { IconBrandGithub, IconMail } from "@tabler/icons-react";
 
 const SOCIALS_ITEMS = [
   {
     name: "Github",
-    icon: <Github />,
+    icon: IconBrandGithub,
     href: "/github",
   },
   {
     name: "Email",
-    icon: <Mail />,
+    icon: IconMail,
     href: "/mail",
   },
 ];
 
 export const HeroSocials = () => (
   <div className="flex gap-6">
-    {SOCIALS_ITEMS.map(({ href, icon, name }, index) => (
+    {SOCIALS_ITEMS.map(({ href, icon: Icon, name }, index) => (
       <a key={index} href={href}>
-        <Badge leftSection={icon}>{name}</Badge>
+        <Badge leftSection={<Icon />}>{name}</Badge>
       </a>
     ))}
   </div>
