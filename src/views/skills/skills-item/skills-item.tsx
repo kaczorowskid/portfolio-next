@@ -2,7 +2,6 @@ import { Icon } from "@tabler/icons-react";
 import { SkillsItemContent } from "./skills-item-content";
 import { SkillsItemHeader } from "./skills-item-header";
 import { Color } from "./skills-item.types";
-import { FunctionComponent } from "react";
 
 export type SkillsItemProps = {
   technology: string;
@@ -14,7 +13,7 @@ export type SkillsItemProps = {
 };
 
 export const SkillsItem = ({ color, skills, technology }: SkillsItemProps) => (
-  <div className="min-w-80 rounded-2xl overflow-hidden text-lg">
+  <div className="rounded-2xl overflow-hidden text-lg">
     <SkillsItemHeader title={technology} />
     <SkillsItemContent color={color} skills={skills} technology={technology} />
   </div>

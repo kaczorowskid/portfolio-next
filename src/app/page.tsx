@@ -5,7 +5,7 @@ import { Hero } from "@/views/hero";
 import { Portfolio } from "@/views/portfolio";
 import { Skills } from "@/views/skills";
 
-export default function Home() {
+export default function HomeIndex() {
   return (
     <>
       <Hero />

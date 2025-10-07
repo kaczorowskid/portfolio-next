@@ -19,7 +19,7 @@ export const SkillsItemContent = ({
   technology,
   skills,
 }: SkillsItemContentProps) => (
-  <div className="bg-gray-900 text-white font-mono h-full">
+  <div className="bg-gray-900 text-white font-mono h-full pb-2">
     <SkillsItemContentCode>
       <SkillsItemContentConst technology={technology}>
         <SkillsItemContentArray>

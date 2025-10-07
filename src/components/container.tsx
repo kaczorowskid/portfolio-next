@@ -15,7 +15,7 @@ export const Container = <T extends ElementType = "div">({
   const As = as || "div";
 
   return (
-    <As className={cn(" mx-auto", className)} {...props}>
+    <As className={cn("mx-auto", className)} {...props}>
       {children}
     </As>
   );
