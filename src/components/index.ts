@@ -1,4 +1,4 @@
-export * from "./ui";
-export * from "./main-layout";
-export * from "./container";
-export * from "./page-section";
+export { Badge, Button, Input, Label, List, Textarea } from "./ui";
+export { MainLayout } from "./main-layout";
+export { Container } from "./container";
+export { PageSection } from "./page-section";
