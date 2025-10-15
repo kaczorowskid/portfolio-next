@@ -1,13 +1,10 @@
-import { Container } from "@/components";
 import { AboutList } from "./about-list";
 import { AboutOverlay } from "./about-overlay";
+import { AboutWrapper } from "./about-wrapper";
 
 export const About = () => (
-  <Container
-    as="section"
-    className="bg-black relative overflow-hidden text-white px-6 py-32 mb-10"
-  >
+  <AboutWrapper>
     <AboutOverlay />
     <AboutList />
-  </Container>
+  </AboutWrapper>
 );

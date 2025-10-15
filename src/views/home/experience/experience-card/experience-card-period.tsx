@@ -5,5 +5,5 @@ type ExperienceCardPeriodProps = {
 };
 
 export const ExperienceCardPeriod = ({ period }: ExperienceCardPeriodProps) => (
-  <Badge>{period}</Badge>
+  <Badge color="black">{period}</Badge>
 );

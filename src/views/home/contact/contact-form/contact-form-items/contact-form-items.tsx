@@ -17,12 +17,7 @@ export const ContactFormItems = () => {
           name="email"
           control={control}
           render={({ field }) => (
-            <Input
-              id="email"
-              placeholder="Email"
-              className="invert"
-              {...field}
-            />
+            <Input id="email" placeholder="Email" {...field} />
           )}
         />
       </div>
@@ -31,7 +26,7 @@ export const ContactFormItems = () => {
           name="name"
           control={control}
           render={({ field }) => (
-            <Input id="name" placeholder="Name" className="invert" {...field} />
+            <Input id="name" placeholder="Name" {...field} />
           )}
         />
       </div>
@@ -40,12 +35,7 @@ export const ContactFormItems = () => {
           name="message"
           control={control}
           render={({ field }) => (
-            <Textarea
-              id="message"
-              placeholder="Message"
-              className="invert"
-              {...field}
-            />
+            <Textarea id="message" placeholder="Message" {...field} />
           )}
         />
       </div>

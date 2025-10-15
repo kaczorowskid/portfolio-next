@@ -18,7 +18,9 @@ export const HeroSocials = () => (
   <div className="flex gap-6">
     {SOCIALS_ITEMS.map(({ href, icon: Icon, name }, index) => (
       <a key={index} href={href}>
-        <Badge leftSection={<Icon />}>{name}</Badge>
+        <Badge color="black" leftSection={<Icon />}>
+          {name}
+        </Badge>
       </a>
     ))}
   </div>

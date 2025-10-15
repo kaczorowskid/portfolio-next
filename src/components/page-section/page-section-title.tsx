@@ -1,26 +1,9 @@
-import { cn } from "@/utils";
-import { Variant } from "./page-section.types";
+import { ReactNode } from "react";
 
 type PageSectionTitleProps = {
-  title: string;
-  variant?: Variant;
+  children: ReactNode;
 };
 
-const MAP_VARIANT_TO_TAILWIND_CLASS: Record<Variant, string> = {
-  black: "text-white",
-  white: "text-black",
-};
-
-export const PageSectionTitle = ({
-  title,
-  variant = "white",
-}: PageSectionTitleProps) => (
-  <h2
-    className={cn(
-      "text-6xl md:text-9xl font-bold",
-      MAP_VARIANT_TO_TAILWIND_CLASS[variant]
-    )}
-  >
-    {title}
-  </h2>
+export const PageSectionTitle = ({ children }: PageSectionTitleProps) => (
+  <h2 className="text-6xl mt-20 md:text-9xl font-bold">{children}</h2>
 );

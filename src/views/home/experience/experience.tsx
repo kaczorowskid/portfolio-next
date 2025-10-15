@@ -1,11 +1,11 @@
-import { PageSection } from "@/components";
 import { ExperienceCard } from "./experience-card";
 import { EXPERIENCE_DATA } from "./experience.data";
+import { ExperienceWrapper } from "./experience-wrapper";
 
 export const Experience = () => (
-  <PageSection title="experience" className="flex flex-col gap-10">
+  <ExperienceWrapper>
     {EXPERIENCE_DATA.map((experience, index) => (
       <ExperienceCard key={index} experience={experience} />
     ))}
-  </PageSection>
+  </ExperienceWrapper>
 );

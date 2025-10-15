@@ -34,7 +34,7 @@ export const ExperienceCard = ({
     technologies,
   },
 }: ExperienceCardProps) => (
-  <div className="p-10 relative border-2 border-gray-200 text-black rounded-3xl mb-12 shadow-2xl">
+  <div className="w-full p-10 relative border-2 border-gray-200 rounded-3xl mb-12 shadow-2xl ">
     <div className="flex justify-between mb-3">
       <ExperienceCardTitle title={company} />
       <ExperienceCardPeriod period={period} />

@@ -1,10 +1,10 @@
-import { PageSection } from "@/components";
 import { ContactForm } from "./contact-form";
 import { ContactGetInTouch } from "./contact-get-in-touch";
+import { ContactWrapper } from "./contact-wrapper";
 
 export const Contact = () => (
-  <PageSection variant="black" title="contact" className="grid grid-cols-2">
+  <ContactWrapper>
     <ContactGetInTouch />
     <ContactForm />
-  </PageSection>
+  </ContactWrapper>
 );

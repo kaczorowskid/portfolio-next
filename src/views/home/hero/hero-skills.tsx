@@ -2,7 +2,7 @@ import { List } from "@/components";
 
 const SKILLS_ITEMS = [
   "Currently specializing in React & Next.js",
-  "Full Stack Developer",
+  "Frontend Developer",
 ];
 
 export const HeroSkills = () => (

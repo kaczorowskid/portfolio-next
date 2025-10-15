@@ -1,18 +1,15 @@
-import { PageSection } from "@/components";
 import { PortfolioItem } from "./portfolio-item";
 import { getSortedPostsData } from "@/lib";
+import { PortfolioWrapper } from "./portfolio-wrapper";
 
 export const Portfolio = () => {
   const portfolios = getSortedPostsData();
 
   return (
-    <PageSection
-      title="portfolio"
-      className="grid grid-cols-1 md:grid-cols-2 gap-10"
-    >
+    <PortfolioWrapper>
       {portfolios.map((portfolio, index) => (
         <PortfolioItem key={index} portfolio={portfolio} />
       ))}
-    </PageSection>
+    </PortfolioWrapper>
   );
 };

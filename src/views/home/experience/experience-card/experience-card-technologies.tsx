@@ -13,7 +13,7 @@ export const ExperienceCardTechnologies = ({
 }: ExperienceCardTechnologiesProps) => (
   <div className="flex gap-2 flex-wrap">
     {technologies.map(({ icon: Icon, name }, index) => (
-      <Badge key={index} leftSection={<Icon />}>
+      <Badge color="black" key={index} leftSection={<Icon />}>
         {name}
       </Badge>
     ))}

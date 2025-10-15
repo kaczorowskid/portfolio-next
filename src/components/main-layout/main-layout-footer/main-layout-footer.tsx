@@ -19,8 +19,8 @@ export const MainLayoutFooter = () => (
           </a>
         </div>
         <div className=" text-center text-gray-400 text-sm">
-          {/* © {new Date().getFullYear()} Damian Kaczorowski. All rights reserved. */}
-          © {new Date().getFullYear()} Test Testowski. All rights reserved.
+          © {new Date().getFullYear()} Damian Kaczorowski. All rights reserved.
+          {/* © {new Date().getFullYear()} Test Testowski. All rights reserved. */}
         </div>
       </div>
     </div>
