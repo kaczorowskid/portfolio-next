@@ -1,5 +1,4 @@
 import { PageSection } from "@/components";
-import { Slot } from "@radix-ui/react-slot";
 import { ReactNode } from "react";
 
 type SkillsWrapperProps = {
@@ -7,7 +6,7 @@ type SkillsWrapperProps = {
 };
 
 export const SkillsWrapper = ({ children }: SkillsWrapperProps) => (
-  <PageSection>
+  <PageSection id="skills-section">
     <div className="-mt-20">
       <PageSection.Title>skills</PageSection.Title>
     </div>

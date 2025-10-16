@@ -6,7 +6,7 @@ type AboutWrapperProps = {
 };
 
 export const AboutWrapper = ({ children }: AboutWrapperProps) => (
-  <PageSection>
+  <PageSection id="about-section">
     <PageSection.Content className="relative overflow-hidden px-6 mt-32  mb-10">
       {children}
     </PageSection.Content>

@@ -1,18 +1,18 @@
 import { MainLayoutNavbarMenuLink } from "./main-layout-navbar-menu-link";
 
 const NAV_ITEMS = [
-  "Home",
-  "About",
-  "Portfolio",
-  "Experience",
-  "Skills",
-  "Contact",
+  { name: "Home", section: "hero-section" },
+  { name: "About", section: "about-section" },
+  { name: "Portfolio", section: "portfolio-section" },
+  { name: "Experience", section: "experience-section" },
+  { name: "Skills", section: "skills-section" },
+  { name: "Contact", section: "contact-section" },
 ];
 
 export const MainLayoutNavbarMenuItems = () => (
   <div className="flex flex-col justify-center items-center gap-12 size-full">
     {NAV_ITEMS.map((item, index) => (
-      <MainLayoutNavbarMenuLink key={index} name={item} />
+      <MainLayoutNavbarMenuLink key={index} item={item} />
     ))}
   </div>
 );
