@@ -7,11 +7,9 @@ type ExperienceCardAchievementsProps = {
 export const ExperienceCardAchievements = ({
   achievements,
 }: ExperienceCardAchievementsProps) => (
-  <div className="mb-6">
-    <List>
-      {achievements.map((achievement, index) => (
-        <List.Item key={index}>{achievement}</List.Item>
-      ))}
-    </List>
-  </div>
+  <List className="mb-6">
+    {achievements.map((achievement, index) => (
+      <List.Item key={index}>{achievement}</List.Item>
+    ))}
+  </List>
 );

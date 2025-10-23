@@ -1,10 +1,10 @@
+import { BackgroundOverlay } from "@/components";
 import { AboutList } from "./about-list";
-import { AboutOverlay } from "./about-overlay";
 import { AboutWrapper } from "./about-wrapper";
 
 export const About = () => (
   <AboutWrapper>
-    <AboutOverlay />
+    <BackgroundOverlay title="about" />
     <AboutList />
   </AboutWrapper>
 );

@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { name: "Portfolio", section: "portfolio-section" },
   { name: "Experience", section: "experience-section" },
   { name: "Skills", section: "skills-section" },
+  { name: "Expertise", section: "expertise-section" },
   { name: "Contact", section: "contact-section" },
 ];
 

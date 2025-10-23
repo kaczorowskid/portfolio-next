@@ -6,13 +6,11 @@ const SKILLS_ITEMS = [
 ];
 
 export const HeroSkills = () => (
-  <div className="mb-10">
-    <List>
-      {SKILLS_ITEMS.map((item, index) => (
-        <List.Item size="small" key={index}>
-          {item}
-        </List.Item>
-      ))}
-    </List>
-  </div>
+  <List className="mb-10">
+    {SKILLS_ITEMS.map((item, index) => (
+      <List.Item size="small" key={index}>
+        {item}
+      </List.Item>
+    ))}
+  </List>
 );

@@ -1,6 +1,7 @@
 import { About } from "./about";
 import { Contact } from "./contact";
 import { Experience } from "./experience";
+import { Expertise } from "./expertise";
 import { Hero } from "./hero";
 import { Portfolio } from "./portfolio";
 import { Skills } from "./skills";
@@ -12,6 +13,7 @@ export const Home = () => (
     <Portfolio />
     <Experience />
     <Skills />
+    <Expertise />
     <Contact />
   </>
 );
