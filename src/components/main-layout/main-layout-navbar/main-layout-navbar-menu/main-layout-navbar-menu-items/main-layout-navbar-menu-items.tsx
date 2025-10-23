@@ -3,7 +3,7 @@ import { MainLayoutNavbarMenuLink } from "./main-layout-navbar-menu-link";
 const NAV_ITEMS = [
   { name: "Home", section: "hero-section" },
   { name: "About", section: "about-section" },
-  { name: "Portfolio", section: "portfolio-section" },
+  { name: "Projects", section: "projects-section" },
   { name: "Experience", section: "experience-section" },
   { name: "Skills", section: "skills-section" },
   { name: "Expertise", section: "expertise-section" },

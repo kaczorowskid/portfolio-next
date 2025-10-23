@@ -3,14 +3,14 @@ import { Contact } from "./contact";
 import { Experience } from "./experience";
 import { Expertise } from "./expertise";
 import { Hero } from "./hero";
-import { Portfolio } from "./portfolio";
+import { Projects } from "./projects";
 import { Skills } from "./skills";
 
 export const Home = () => (
   <>
     <Hero />
     <About />
-    <Portfolio />
+    <Projects />
     <Experience />
     <Skills />
     <Expertise />

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export const usePortfolioItemHeader = () => {
+export const useProjectsItemHeader = () => {
   const [descriptionHeight, setDescriptionHeight] = useState(0);
   const descriptionRef = useRef<HTMLParagraphElement | null>(null);
 

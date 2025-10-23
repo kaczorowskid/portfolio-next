@@ -1,18 +1,18 @@
-import { CSSProperties, RefObject } from "react";
-import { usePortfolioItemHeader } from "./use-portfolio-item-header";
+import { CSSProperties } from "react";
+import { useProjectsItemHeader } from "./use-projects-item-header";
 
-type PortfolioItemHeaderProps = {
+type ProjectsItemHeaderProps = {
   title: string;
   subtitle: string;
   description?: string;
 };
 
-export const PortfolioItemHeader = ({
+export const ProjectsItemHeader = ({
   description,
   subtitle,
   title,
-}: PortfolioItemHeaderProps) => {
-  const { descriptionHeight, descriptionRef } = usePortfolioItemHeader();
+}: ProjectsItemHeaderProps) => {
+  const { descriptionHeight, descriptionRef } = useProjectsItemHeader();
 
   return (
     <header className="px-10 py-10">
