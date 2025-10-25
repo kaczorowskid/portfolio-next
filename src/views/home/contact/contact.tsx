@@ -1,10 +1,8 @@
-import { ContactForm } from "./contact-form";
-import { ContactGetInTouch } from "./contact-get-in-touch";
+import { ContactIcons } from "./contact-icons";
 import { ContactWrapper } from "./contact-wrapper";
 
 export const Contact = () => (
   <ContactWrapper>
-    <ContactGetInTouch />
-    <ContactForm />
+    <ContactIcons />
   </ContactWrapper>
 );

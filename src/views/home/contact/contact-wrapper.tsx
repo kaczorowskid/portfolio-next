@@ -6,12 +6,9 @@ type ContactWrapperProps = {
 };
 
 export const ContactWrapper = ({ children }: ContactWrapperProps) => (
-  <PageSection id="contact-section" variant="black">
-    <PageSection.Title>contact</PageSection.Title>
-    <PageSection.Inset>
-      <PageSection.Content className="grid grid-cols-2">
-        {children}
-      </PageSection.Content>
-    </PageSection.Inset>
+  <PageSection id="contact-section" variant="white">
+    <PageSection.Content className="min-h-screen relative flex justify-center items-center">
+      {children}
+    </PageSection.Content>
   </PageSection>
 );

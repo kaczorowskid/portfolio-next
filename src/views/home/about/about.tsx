@@ -4,7 +4,7 @@ import { AboutWrapper } from "./about-wrapper";
 
 export const About = () => (
   <AboutWrapper>
-    <BackgroundOverlay title="about" />
+    <BackgroundOverlay title="about" opacity={5} />
     <AboutList />
   </AboutWrapper>
 );
