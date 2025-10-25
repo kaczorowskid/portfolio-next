@@ -10,5 +10,5 @@ export const PageSectionContent = ({
   className,
   children,
 }: PageSectionContentProps) => (
-  <div className={cn("w-full", className)}>{children}</div>
+  <div className={cn("w-full px-6 sm:px-16", className)}>{children}</div>
 );

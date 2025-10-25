@@ -11,6 +11,6 @@ export const ContactIconsItem = ({
   icon: Icon,
 }: ContactIconsItemProps) => (
   <Link href={href}>
-    <Icon className="size-40 text-green-600" />
+    <Icon className="size-20 lg:size-40 text-green-600" />
   </Link>
 );
