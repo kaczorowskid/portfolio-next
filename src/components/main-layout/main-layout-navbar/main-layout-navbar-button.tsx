@@ -9,7 +9,7 @@ export const MainLayoutNavbarButton = ({
 }: MainLayoutNavbarButtonProps) => {
   return (
     <button
-      className="fixed top-10 right-10 w-16 h-16 bg-white mix-blend-difference rounded-full flex justify-center items-center font-bold z-50 flex-col cursor-pointer transition-all duration-500"
+      className="fixed top-4 right-4 size-10 lg:top-10 lg:right-10 lg:size-16 bg-white mix-blend-difference rounded-full flex justify-center items-center font-bold z-50 flex-col cursor-pointer transition-all duration-500"
       onClick={toogleMenu}
     >
       <div
