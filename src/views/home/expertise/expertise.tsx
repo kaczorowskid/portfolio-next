@@ -1,20 +1,13 @@
-"use client";
+import { ExpertiseDesktop } from "./expertise-desktop/expertise-desktop";
+import { ExpertiseMobile } from "./expertise-mobile";
 
-import { ExpertiseDetails } from "./expertise-details";
-import { ExpertiseImage } from "./expertise-images";
-import { ExpertiseWrapper } from "./expertise-wrapper";
-import { useExpertise } from "./use-expertise";
-
-export const Expertise = () => {
-  const { currentItem, setElementRef } = useExpertise();
-
-  return (
-    <ExpertiseWrapper>
-      <ExpertiseImage currentItem={currentItem} />
-      <ExpertiseDetails
-        currentItem={currentItem}
-        setElementRef={setElementRef}
-      />
-    </ExpertiseWrapper>
-  );
-};
+export const Expertise = () => (
+  <>
+    <div className="hidden lg:block">
+      <ExpertiseDesktop />
+    </div>
+    <div className="block lg:hidden">
+      <ExpertiseMobile />
+    </div>
+  </>
+);

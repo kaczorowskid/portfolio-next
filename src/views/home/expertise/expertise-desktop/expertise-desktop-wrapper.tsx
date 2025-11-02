@@ -1,11 +1,13 @@
 import { PageSection } from "@/components";
 import { ReactNode } from "react";
 
-type ExpertiseWrapperProps = {
+type ExpertiseDesktopWrapperProps = {
   children: ReactNode;
 };
 
-export const ExpertiseWrapper = ({ children }: ExpertiseWrapperProps) => (
+export const ExpertiseDesktopWrapper = ({
+  children,
+}: ExpertiseDesktopWrapperProps) => (
   <PageSection id="expertise-section" variant="black">
     <PageSection.Title>expertise</PageSection.Title>
     <PageSection.Inset>

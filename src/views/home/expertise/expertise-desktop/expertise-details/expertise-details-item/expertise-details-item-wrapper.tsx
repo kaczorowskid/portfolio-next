@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { ExpertiseDetailsItemWrapperCounter } from "./expertise-details-item-wrapper-counter";
 import { cn } from "@/utils";
+import { ExpertiseDetailsCounter } from "@/views/home/expertise/shared/ui";
 
 type ExpertiseDetailsItemWrapperProps = {
   count: number;
@@ -24,10 +24,9 @@ export const ExpertiseDetailsItemWrapper = ({
     )}
   >
     <div className="relative border-l pl-12 pb-6">
-      <ExpertiseDetailsItemWrapperCounter
-        isHiglighted={isHiglighted}
-        count={count}
-      />
+      <div className="absolute -left-7 top-4">
+        <ExpertiseDetailsCounter isHiglighted={isHiglighted} count={count} />
+      </div>
       {children}
     </div>
   </div>

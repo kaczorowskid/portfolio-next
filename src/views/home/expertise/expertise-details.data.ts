@@ -1,6 +1,13 @@
+import frontend from "@/assets/images/frontend.svg";
+import design from "@/assets/images/design.svg";
+import development from "@/assets/images/development.svg";
+import discovery from "@/assets/images/discovery.png";
+import planning from "@/assets/images/planning.svg";
+
 export const EXPERTISE_DETAILS_DATA = [
   {
     title: "Discovery",
+    image: discovery,
     description:
       "Before writing a single line of code, I start by understanding the product’s purpose, audience, and technical requirements. This stage ensures that every design and technical choice aligns with real goals — not assumptions.",
     bullets: [
@@ -12,6 +19,7 @@ export const EXPERTISE_DETAILS_DATA = [
   },
   {
     title: "Planning & Architecture",
+    image: planning,
     description:
       "Here I focus on designing a solid foundation for scalability and maintainability. I set up the structure, dependencies, and reusable building blocks before diving into UI work.",
     bullets: [
@@ -22,6 +30,7 @@ export const EXPERTISE_DETAILS_DATA = [
   },
   {
     title: "Design & Prototyping",
+    image: design,
     description:
       "Once the foundation is ready, I translate designs into responsive and accessible interfaces — keeping attention to every pixel and interaction.",
     bullets: [
@@ -33,6 +42,7 @@ export const EXPERTISE_DETAILS_DATA = [
   },
   {
     title: "Development",
+    image: development,
     description:
       "This is where ideas become reality. I implement logic, connect APIs, and bring the UI to life while keeping performance and readability as top priorities.",
     bullets: [
@@ -44,6 +54,7 @@ export const EXPERTISE_DETAILS_DATA = [
   },
   {
     title: "Testing & Delivery",
+    image: frontend,
     description:
       "After the core features are ready, I focus on testing, optimization, and deployment — ensuring a smooth handoff and production-ready performance.",
     bullets: [

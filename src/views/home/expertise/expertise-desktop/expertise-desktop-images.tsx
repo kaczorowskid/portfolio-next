@@ -4,14 +4,23 @@ import development from "@/assets/images/development.svg";
 import discovery from "@/assets/images/discovery.png";
 import planning from "@/assets/images/planning.svg";
 import Image from "next/image";
+import { EXPERTISE_DETAILS_DATA } from "../expertise-details.data";
 
-type ExpertiseImage = {
+type ExpertiseDesktopImageProps = {
   currentItem: number[];
 };
 
-const IMAGES_DATA = [discovery, planning, design, development, frontend];
+const IMAGES_DATA = [
+  EXPERTISE_DETAILS_DATA[0].image,
+  EXPERTISE_DETAILS_DATA[1].image,
+  EXPERTISE_DETAILS_DATA[2].image,
+  EXPERTISE_DETAILS_DATA[3].image,
+  EXPERTISE_DETAILS_DATA[4].image,
+];
 
-export const ExpertiseImage = ({ currentItem }: ExpertiseImage) => {
+export const ExpertiseDesktopImage = ({
+  currentItem,
+}: ExpertiseDesktopImageProps) => {
   const currentImage = IMAGES_DATA[currentItem.length - 2] ?? IMAGES_DATA[0];
 
   return (

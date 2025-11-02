@@ -1,5 +1,5 @@
-import { ExpertiseDetailsItem } from "./expertise-details-item/expertise-details-item";
-import { EXPERTISE_DETAILS_DATA } from "./expertise-details.data";
+import { ExpertiseDetailsItem } from "./expertise-details-item";
+import { EXPERTISE_DETAILS_DATA } from "../../expertise-details.data";
 
 type ExpertiseDetailsProps = {
   currentItem: number[];

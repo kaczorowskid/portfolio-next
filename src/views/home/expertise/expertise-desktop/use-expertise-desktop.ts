@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 const THRESHOLD = 0.5;
 
-export const useExpertise = () => {
+export const useExpertiseDesktop = () => {
   const elementRef = useRef<HTMLDivElement[]>([]);
 
   const [currentItem, setCurrentItem] = useState<number[]>([]);
