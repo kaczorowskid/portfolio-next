@@ -1,21 +1,17 @@
-import { Badge } from "@/components/ui";
 import { Icon } from "@tabler/icons-react";
 import Link from "next/link";
 
 type MainLayoutFooterSocialsItemProps = {
-  href: string;
-  icon: Icon;
-  name: string;
+  item: {
+    href: string;
+    icon: Icon;
+  };
 };
 
 export const MainLayoutFooterSocialsItem = ({
-  href,
-  icon: Icon,
-  name,
+  item: { href, icon: Icon },
 }: MainLayoutFooterSocialsItemProps) => (
   <Link href={href}>
-    <Badge leftSection={<Icon />} color="black">
-      {name}
-    </Badge>
+    <Icon className="size-10 lg:size-14 text-green-600" />
   </Link>
 );

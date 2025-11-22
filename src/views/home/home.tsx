@@ -1,5 +1,4 @@
 import { About } from "./about";
-import { Contact } from "./contact";
 import { Experience } from "./experience";
 import { Expertise } from "./expertise/expertise";
 
@@ -15,6 +14,5 @@ export const Home = () => (
     <Experience />
     <Skills />
     <Expertise />
-    <Contact />
   </>
 );

@@ -6,27 +6,25 @@ type MainLayoutNavbarButtonProps = {
 export const MainLayoutNavbarButton = ({
   isOpen,
   toogleMenu,
-}: MainLayoutNavbarButtonProps) => {
-  return (
-    <button
-      className="fixed top-4 right-4 size-10 lg:top-10 lg:right-10 lg:size-16 bg-white mix-blend-difference rounded-full flex justify-center items-center font-bold z-50 flex-col cursor-pointer transition-all duration-500"
-      onClick={toogleMenu}
-    >
-      <div
-        className={`h-1 w-6 my-0.5 rounded-full bg-black  transition ease transform duration-300 ${
-          isOpen && "rotate-45 translate-y-2"
-        } `}
-      />
-      <div
-        className={`h-1 w-6 my-0.5 rounded-full bg-black transition ease transform duration-300 ${
-          isOpen ? "opacity-0" : "opacity-100"
-        }`}
-      />
-      <div
-        className={`h-1 w-6 my-0.5 rounded-full bg-black transition ease transform duration-300 ${
-          isOpen && "-rotate-45 -translate-y-2"
-        }`}
-      />
-    </button>
-  );
-};
+}: MainLayoutNavbarButtonProps) => (
+  <button
+    className="fixed top-4 right-4 size-10 lg:top-10 lg:right-10 lg:size-16 bg-white mix-blend-difference rounded-full flex justify-center items-center font-bold z-50 flex-col cursor-pointer transition-all duration-500"
+    onClick={toogleMenu}
+  >
+    <div
+      className={`h-1 w-6 my-0.5 rounded-full bg-black  transition ease transform duration-300 ${
+        isOpen && "rotate-45 translate-y-2"
+      } `}
+    />
+    <div
+      className={`h-1 w-6 my-0.5 rounded-full bg-black transition ease transform duration-300 ${
+        isOpen ? "opacity-0" : "opacity-100"
+      }`}
+    />
+    <div
+      className={`h-1 w-6 my-0.5 rounded-full bg-black transition ease transform duration-300 ${
+        isOpen && "-rotate-45 -translate-y-2"
+      }`}
+    />
+  </button>
+);

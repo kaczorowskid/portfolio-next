@@ -15,14 +15,9 @@ const SOCIALS_DATA = [
 ];
 
 export const MainLayoutFooterSocials = () => (
-  <div className="flex gap-8 mb-8 md:mb-0">
-    {SOCIALS_DATA.map(({ href, icon, name }, index) => (
-      <MainLayoutFooterSocialsItem
-        key={index}
-        href={href}
-        icon={icon}
-        name={name}
-      />
+  <div className="flex gap-6">
+    {SOCIALS_DATA.map((item, index) => (
+      <MainLayoutFooterSocialsItem key={index} item={item} />
     ))}
   </div>
 );
