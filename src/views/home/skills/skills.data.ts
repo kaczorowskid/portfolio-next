@@ -21,16 +21,20 @@ export const SKILLS_DATA = {
     color: "red" as const,
     skills: [
       {
+        name: "JavaScript",
+        icon: IconBrandReact,
+      },
+      {
+        name: "TypeScript",
+        icon: IconBrandTypescript,
+      },
+      {
         name: "React",
         icon: IconBrandReact,
       },
       {
         name: "Next.js",
         icon: IconBrandNextjs,
-      },
-      {
-        name: "TypeScript",
-        icon: IconBrandTypescript,
       },
       {
         name: "HTML",
@@ -41,8 +45,24 @@ export const SKILLS_DATA = {
         icon: IconBrandCss3,
       },
       {
+        name: "Redux",
+        icon: IconBrandCss3,
+      },
+      {
+        name: "Zustand",
+        icon: IconBrandCss3,
+      },
+      {
+        name: "Tanstack Query",
+        icon: IconBrandCss3,
+      },
+      {
         name: "Tailwind CSS",
         icon: IconBrandTailwind,
+      },
+      {
+        name: "Storybook",
+        icon: IconBrandCss3,
       },
       {
         name: "Cypress",
@@ -58,6 +78,14 @@ export const SKILLS_DATA = {
     color: "orange" as const,
     skills: [
       {
+        name: "Java Spring Boot",
+        icon: IconBrandNodejs,
+      },
+      {
+        name: "Spring Hibernate",
+        icon: IconBrandNodejs,
+      },
+      {
         name: "Node.js",
         icon: IconBrandNodejs,
       },
@@ -70,7 +98,7 @@ export const SKILLS_DATA = {
         icon: IconCodeVariable,
       },
       {
-        name: "postgresql",
+        name: "PostgreSQL",
         icon: IconBuildingStadium,
       },
       {
@@ -79,9 +107,29 @@ export const SKILLS_DATA = {
       },
     ],
   },
-  others: {
+  other: {
     color: "purple" as const,
     skills: [
+      {
+        name: "Claude Code",
+        icon: IconBrandGit,
+      },
+      {
+        name: "Nx",
+        icon: IconBrandGit,
+      },
+      {
+        name: "Docker",
+        icon: IconBrandGit,
+      },
+      {
+        name: "REST",
+        icon: IconBrandGit,
+      },
+      {
+        name: "RWD",
+        icon: IconBrandGit,
+      },
       {
         name: "Git",
         icon: IconBrandGit,

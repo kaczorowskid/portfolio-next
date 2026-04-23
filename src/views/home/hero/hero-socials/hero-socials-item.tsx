@@ -14,7 +14,7 @@ export const HeroSocialsItem = ({
   name,
 }: HeroSocialsItemProps) => (
   <Link href={href}>
-    <Badge color="black" leftSection={<Icon />}>
+    <Badge color="white" leftSection={<Icon />}>
       {name}
     </Badge>
   </Link>

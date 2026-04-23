@@ -1,11 +1,9 @@
 import { TablerIcon } from "@tabler/icons-react";
 import { ExperienceCardAchievements } from "./experience-card-achievements";
 import { ExperienceCardDescription } from "./experience-card-description";
-import { ExperienceCardLocation } from "./experience-card-location";
-import { ExperienceCardPeriod } from "./experience-card-period";
-import { ExperienceCardPosition } from "./experience-card-position";
+import { StaticImageData } from "next/image";
+import { ExperienceCardHeader } from "./experience-card-header";
 import { ExperienceCardTechnologies } from "./experience-card-technologies";
-import { ExperienceCardTitle } from "./experience-card-title";
 
 type ExperienceCardProps = {
   experience: {
@@ -14,6 +12,7 @@ type ExperienceCardProps = {
     position: string;
     location: string;
     period: string;
+    logo: StaticImageData;
     description: string;
     achievements: string[];
     technologies: {
@@ -30,17 +29,19 @@ export const ExperienceCard = ({
     description,
     location,
     period,
+    logo,
     position,
     technologies,
   },
 }: ExperienceCardProps) => (
-  <div className="w-full p-10 relative border-2 border-gray-200 rounded-3xl mb-12 shadow-2xl ">
-    <div className="flex justify-between mb-3">
-      <ExperienceCardTitle title={company} />
-      <ExperienceCardPeriod period={period} />
-    </div>
-    <ExperienceCardPosition position={position} />
-    <ExperienceCardLocation location={location} />
+  <div className="w-full p-4 md:p-10 relative border-2 border-gray-200 rounded-3xl mb-12 shadow-2xl ">
+    <ExperienceCardHeader
+      position={position}
+      logo={logo}
+      title={company}
+      period={period}
+      location={location}
+    />
     <ExperienceCardDescription description={description} />
     <ExperienceCardAchievements achievements={achievements} />
     <ExperienceCardTechnologies technologies={technologies} />

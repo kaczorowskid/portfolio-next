@@ -19,12 +19,12 @@ const SOCIALS_ITEMS = [
   {
     name: "Linkedin",
     icon: IconBrandLinkedin,
-    href: "https://linkedin.com",
+    href: "https://linkedin.com/in/damiankaczorowski",
   },
 ];
 
 export const HeroSocials = () => (
-  <div className="flex gap-6">
+  <div className="flex gap-6 flex-wrap">
     {SOCIALS_ITEMS.map(({ href, icon, name }, index) => (
       <HeroSocialsItem key={index} href={href} icon={icon} name={name} />
     ))}

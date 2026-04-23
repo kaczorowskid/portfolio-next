@@ -6,8 +6,8 @@ type HeroWrapperProps = {
 };
 
 export const HeroWrapper = ({ children }: HeroWrapperProps) => (
-  <PageSection id="hero-section" variant="black">
-    <PageSection.Content className="h-screen flex flex-col justify-center">
+  <PageSection id="hero-section">
+    <PageSection.Content className="h-screen flex flex-col justify-center max-w-350">
       {children}
     </PageSection.Content>
   </PageSection>

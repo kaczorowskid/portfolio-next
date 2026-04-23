@@ -1,20 +1,18 @@
 import { HeroTitle } from "./hero-title";
 import { HeroDescription } from "./hero-description";
-import { HeroSkills } from "./hero-skills";
 import { HeroSocials } from "./hero-socials";
 import { HeroWrapper } from "./hero-wrapper";
-import { HeroMorphingBlob } from "./hero-morphing-blob";
+import { HeroImage } from "./hero-image";
 
 export const Hero = () => (
   <HeroWrapper>
-    <div className="flex">
-      <div>
+    <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-16">
+      <div className="flex-1">
         <HeroTitle />
         <HeroDescription />
-        <HeroSkills />
         <HeroSocials />
       </div>
-      <HeroMorphingBlob />
+      <HeroImage />
     </div>
   </HeroWrapper>
 );

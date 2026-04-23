@@ -1,15 +1,13 @@
-import { getSortedPostsData } from "@/lib";
-import { ProjectsItem } from "./projects-item";
-import { ProjectsWrapper } from "./projects-wrapper";
+import { ProjectsDesktop } from "./projects-desktop/projects-desktop";
+import { ProjectsMobile } from "./projects-mobile";
 
-export const Projects = () => {
-  const projects = getSortedPostsData();
-
-  return (
-    <ProjectsWrapper>
-      {projects.map((portfolio, index) => (
-        <ProjectsItem key={index} portfolio={portfolio} />
-      ))}
-    </ProjectsWrapper>
-  );
-};
+export const Projects = () => (
+  <>
+    <div className="hidden lg:block">
+      <ProjectsDesktop />
+    </div>
+    <div className="block lg:hidden">
+      <ProjectsMobile />
+    </div>
+  </>
+);

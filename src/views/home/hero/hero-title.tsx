@@ -1,6 +1,11 @@
 export const HeroTitle = () => (
-  <div className="mb-8 -ml-1.5 text-6xl md:text-8xl lg:text-9xl font-bold wrap-anywhere">
-    <p className="text-green-600">Damian</p>
-    <p>Kaczorowski</p>
-  </div>
+  <>
+    <h1 className="text-4xl md:text-5xl lg:text-7xl font-light mb-2">
+      Hello I'm <span className="font-extrabold">Damian Kaczorowski.</span>
+    </h1>
+    <p className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-2">
+      Software{" "}
+      <span className="bg-black text-white px-3 rounded">Developer</span>
+    </p>
+  </>
 );
