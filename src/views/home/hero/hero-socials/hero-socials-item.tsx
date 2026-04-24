@@ -1,10 +1,10 @@
 import { Badge } from "@/components";
-import { Icon } from "@tabler/icons-react";
 import Link from "next/link";
+import { IconType } from "react-icons";
 
 type HeroSocialsItemProps = {
   href: string;
-  icon: Icon;
+  icon: IconType;
   name: string;
 };
 

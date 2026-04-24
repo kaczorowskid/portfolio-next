@@ -1,13 +1,25 @@
 import {
-  IconBrandAbstract,
-  IconBrandCss3,
-  IconBrandCypress,
-  IconBrandHtml5,
-  IconBrandNextjs,
-  IconBrandReact,
-  IconBrandTailwind,
-  IconBrandTypescript,
-} from "@tabler/icons-react";
+  SiAntdesign,
+  SiCss,
+  SiCypress,
+  SiHibernate,
+  SiHtml5,
+  SiJest,
+  SiNextdotjs,
+  SiNx,
+  SiReact,
+  SiReactquery,
+  SiRedux,
+  SiShadcnui,
+  SiSpringboot,
+  SiStorybook,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiTypescript,
+  SiVitest,
+} from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+import { GiBearFace } from "react-icons/gi";
 
 import cybLogo from "@/assets/logos/codeyourbrand_logo.jpeg";
 import codetainLogo from "@/assets/logos/codetain_logo.jpeg";
@@ -33,36 +45,72 @@ export const EXPERIENCE_DATA = [
     logo: cybLogo,
     technologies: [
       {
-        name: "React",
-        icon: IconBrandReact,
+        name: "Java",
+        icon: FaJava,
       },
       {
-        name: "TypeScript",
-        icon: IconBrandTypescript,
+        name: "Spring Boot",
+        icon: SiSpringboot,
+      },
+      {
+        name: "Spring Hibernate",
+        icon: SiHibernate,
       },
       {
         name: "Next.js",
-        icon: IconBrandNextjs,
+        icon: SiNextdotjs,
+      },
+      {
+        name: "React",
+        icon: SiReact,
       },
       {
         name: "HTML",
-        icon: IconBrandHtml5,
+        icon: SiHtml5,
       },
       {
         name: "CSS",
-        icon: IconBrandCss3,
+        icon: SiCss,
+      },
+      {
+        name: "TypeScript",
+        icon: SiTypescript,
+      },
+      {
+        name: "Zustand",
+        icon: GiBearFace,
+      },
+      {
+        name: "Shadcn",
+        icon: SiShadcnui,
       },
       {
         name: "Tailwind CSS",
-        icon: IconBrandTailwind,
+        icon: SiTailwindcss,
+      },
+      {
+        name: "Tanstack-Query",
+        icon: SiReactquery,
+      },
+      {
+        name: "Storybook",
+        icon: SiStorybook,
+      },
+      {
+        name: "Nx",
+        icon: SiNx,
       },
       {
         name: "Jest",
-        icon: IconBrandAbstract,
+        icon: SiJest,
+      },
+      {
+        name: "Vitest",
+        icon: SiVitest,
       },
       {
         name: "Cypress",
-        icon: IconBrandCypress,
+        icon: SiCypress,
       },
     ],
   },
@@ -85,35 +133,55 @@ export const EXPERIENCE_DATA = [
     technologies: [
       {
         name: "React",
-        icon: IconBrandReact,
-      },
-      {
-        name: "TypeScript",
-        icon: IconBrandTypescript,
+        icon: SiReact,
       },
       {
         name: "Next.js",
-        icon: IconBrandNextjs,
+        icon: SiNextdotjs,
       },
       {
         name: "HTML",
-        icon: IconBrandHtml5,
+        icon: SiHtml5,
       },
       {
         name: "CSS",
-        icon: IconBrandCss3,
+        icon: SiCss,
+      },
+      {
+        name: "TypeScript",
+        icon: SiTypescript,
+      },
+      {
+        name: "Redux",
+        icon: SiRedux,
+      },
+      {
+        name: "Zustand",
+        icon: GiBearFace,
+      },
+      {
+        name: "Styled-Components",
+        icon: SiStyledcomponents,
+      },
+      {
+        name: "Tanstack-Query",
+        icon: SiReactquery,
+      },
+      {
+        name: "Antd",
+        icon: SiAntdesign,
       },
       {
         name: "Tailwind CSS",
-        icon: IconBrandTailwind,
+        icon: SiTailwindcss,
       },
       {
         name: "Jest",
-        icon: IconBrandAbstract,
+        icon: SiJest,
       },
       {
         name: "Cypress",
-        icon: IconBrandCypress,
+        icon: SiCypress,
       },
     ],
   },

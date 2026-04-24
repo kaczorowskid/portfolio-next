@@ -1,143 +1,71 @@
 import {
-  IconBrandAbstract,
-  IconBrandCss3,
-  IconBrandCypress,
-  IconBrandFigma,
-  IconBrandGit,
-  IconBrandHtml5,
-  IconBrandMongodb,
-  IconBrandNextjs,
-  IconBrandNodejs,
-  IconBrandReact,
-  IconBrandTailwind,
-  IconBrandTypescript,
-  IconBuildingStadium,
-  IconCodeVariable,
-  IconImageInPicture,
-} from "@tabler/icons-react";
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiHtml5,
+  SiCss,
+  SiRedux,
+  SiReactquery,
+  SiTailwindcss,
+  SiStorybook,
+  SiCypress,
+  SiJest,
+  SiSpringboot,
+  SiHibernate,
+  SiNodedotjs,
+  SiExpress,
+  SiPostgresql,
+  SiMongodb,
+  SiAnthropic,
+  SiNx,
+  SiDocker,
+  SiGit,
+  SiFigma,
+} from "react-icons/si";
+import { TbApi, TbDeviceMobile, TbBrandRedux } from "react-icons/tb";
 
 export const SKILLS_DATA = {
   frontend: {
     color: "red" as const,
     skills: [
-      {
-        name: "JavaScript",
-        icon: IconBrandReact,
-      },
-      {
-        name: "TypeScript",
-        icon: IconBrandTypescript,
-      },
-      {
-        name: "React",
-        icon: IconBrandReact,
-      },
-      {
-        name: "Next.js",
-        icon: IconBrandNextjs,
-      },
-      {
-        name: "HTML",
-        icon: IconBrandHtml5,
-      },
-      {
-        name: "CSS",
-        icon: IconBrandCss3,
-      },
-      {
-        name: "Redux",
-        icon: IconBrandCss3,
-      },
-      {
-        name: "Zustand",
-        icon: IconBrandCss3,
-      },
-      {
-        name: "Tanstack Query",
-        icon: IconBrandCss3,
-      },
-      {
-        name: "Tailwind CSS",
-        icon: IconBrandTailwind,
-      },
-      {
-        name: "Storybook",
-        icon: IconBrandCss3,
-      },
-      {
-        name: "Cypress",
-        icon: IconBrandCypress,
-      },
-      {
-        name: "Jest",
-        icon: IconBrandAbstract,
-      },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "HTML", icon: SiHtml5 },
+      { name: "CSS", icon: SiCss },
+      { name: "Redux", icon: SiRedux },
+      { name: "Zustand", icon: TbBrandRedux },
+      { name: "Tanstack Query", icon: SiReactquery },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Storybook", icon: SiStorybook },
+      { name: "Cypress", icon: SiCypress },
+      { name: "Jest", icon: SiJest },
     ],
   },
   backend: {
     color: "orange" as const,
     skills: [
-      {
-        name: "Java Spring Boot",
-        icon: IconBrandNodejs,
-      },
-      {
-        name: "Spring Hibernate",
-        icon: IconBrandNodejs,
-      },
-      {
-        name: "Node.js",
-        icon: IconBrandNodejs,
-      },
-      {
-        name: "Next.js",
-        icon: IconImageInPicture,
-      },
-      {
-        name: "express.js",
-        icon: IconCodeVariable,
-      },
-      {
-        name: "PostgreSQL",
-        icon: IconBuildingStadium,
-      },
-      {
-        name: "Mongo DB",
-        icon: IconBrandMongodb,
-      },
+      { name: "Java Spring Boot", icon: SiSpringboot },
+      { name: "Spring Hibernate", icon: SiHibernate },
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "express.js", icon: SiExpress },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "Mongo DB", icon: SiMongodb },
     ],
   },
   other: {
     color: "purple" as const,
     skills: [
-      {
-        name: "Claude Code",
-        icon: IconBrandGit,
-      },
-      {
-        name: "Nx",
-        icon: IconBrandGit,
-      },
-      {
-        name: "Docker",
-        icon: IconBrandGit,
-      },
-      {
-        name: "REST",
-        icon: IconBrandGit,
-      },
-      {
-        name: "RWD",
-        icon: IconBrandGit,
-      },
-      {
-        name: "Git",
-        icon: IconBrandGit,
-      },
-      {
-        name: "Figma",
-        icon: IconBrandFigma,
-      },
+      { name: "Claude Code", icon: SiAnthropic },
+      { name: "Nx", icon: SiNx },
+      { name: "Docker", icon: SiDocker },
+      { name: "REST", icon: TbApi },
+      { name: "RWD", icon: TbDeviceMobile },
+      { name: "Git", icon: SiGit },
+      { name: "Figma", icon: SiFigma },
     ],
   },
 };

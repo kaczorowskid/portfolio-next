@@ -1,10 +1,10 @@
 import { Badge } from "@/components";
-import { TablerIcon } from "@tabler/icons-react";
+import { IconType } from "react-icons";
 
 type ExperienceCardTechnologiesProps = {
   technologies: {
     name: string;
-    icon: TablerIcon;
+    icon: IconType;
   }[];
 };
 

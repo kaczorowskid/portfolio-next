@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { IconBrandGithub, IconLocation } from "@tabler/icons-react";
+import { SiGithub } from "react-icons/si";
+import { TbLocation } from "react-icons/tb";
 import { useRef } from "react";
 import { PROJECTS_DETAILS_DATA } from "../../projects-details.data";
 import { ProjectsDesktopImageLink } from "./projects-desktop-images-link";
@@ -31,10 +32,10 @@ export const ProjectsDesktopImage = ({
         >
           <div className="flex px-3 py-2 gap-3 bg-black rounded-lg">
             {github && (
-              <ProjectsDesktopImageLink href={github} icon={IconBrandGithub} />
+              <ProjectsDesktopImageLink href={github} icon={SiGithub} />
             )}
             {live && (
-              <ProjectsDesktopImageLink href={live} icon={IconLocation} />
+              <ProjectsDesktopImageLink href={live} icon={TbLocation} />
             )}
           </div>
         </div>

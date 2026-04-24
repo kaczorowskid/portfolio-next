@@ -1,12 +1,12 @@
 import { Color } from "../../skills-item.types";
-import { Icon } from "@tabler/icons-react";
 import { SkillsItemContentValueItem } from "./skills-item-content-value-item";
 import { SkillsItemContentValueComment } from "./skills-item-content-value-comment";
+import { IconType } from "react-icons";
 
 type SkillsItemContentValueProps = {
   color: Color;
   name: string;
-  icon: Icon;
+  icon: IconType;
 };
 
 export const SkillsItemContentValue = ({

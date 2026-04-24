@@ -1,7 +1,7 @@
-import { Icon } from "@tabler/icons-react";
+import { IconType } from "react-icons";
 
 type SkillsItemContentValueCommentProps = {
-  icon: Icon;
+  icon: IconType;
 };
 
 export const SkillsItemContentValueComment = ({

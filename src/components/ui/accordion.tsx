@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
+import { TbChevronDown } from "react-icons/tb";
 import { cn } from "@/utils";
 
 function Accordion({
@@ -40,7 +40,7 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <IconChevronDown className="text-muted-foreground pointer-events-none size-6 shrink-0 translate-y-0.5 transition-transform duration-200" />
+        <TbChevronDown className="text-muted-foreground pointer-events-none size-6 shrink-0 translate-y-0.5 transition-transform duration-200" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );

@@ -1,8 +1,8 @@
-import { Icon } from "@tabler/icons-react";
+import { IconType } from "react-icons";
 
 type ProjectsDesktopImageLinkProps = {
   href: string;
-  icon: Icon;
+  icon: IconType;
 };
 
 export const ProjectsDesktopImageLink = ({

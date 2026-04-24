@@ -1,9 +1,9 @@
-import { TablerIcon } from "@tabler/icons-react";
 import { ExperienceCardAchievements } from "./experience-card-achievements";
 import { ExperienceCardDescription } from "./experience-card-description";
 import { StaticImageData } from "next/image";
 import { ExperienceCardHeader } from "./experience-card-header";
 import { ExperienceCardTechnologies } from "./experience-card-technologies";
+import { IconType } from "react-icons";
 
 type ExperienceCardProps = {
   experience: {
@@ -17,7 +17,7 @@ type ExperienceCardProps = {
     achievements: string[];
     technologies: {
       name: string;
-      icon: TablerIcon;
+      icon: IconType;
     }[];
   };
 };

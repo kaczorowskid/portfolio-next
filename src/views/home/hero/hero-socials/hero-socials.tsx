@@ -1,24 +1,22 @@
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconMail,
-} from "@tabler/icons-react";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import { TbMail } from "react-icons/tb";
 import { HeroSocialsItem } from "./hero-socials-item";
 
 const SOCIALS_ITEMS = [
   {
     name: "Email",
-    icon: IconMail,
+    icon: TbMail,
     href: "mailto:kaczorowskid97@gmail.com",
   },
   {
     name: "Github",
-    icon: IconBrandGithub,
+    icon: SiGithub,
     href: "https://github.com/kaczorowskid",
   },
   {
     name: "Linkedin",
-    icon: IconBrandLinkedin,
+    icon: FaLinkedin,
     href: "https://linkedin.com/in/damiankaczorowski",
   },
 ];
