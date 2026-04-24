@@ -7,9 +7,7 @@ type SkillsWrapperProps = {
 
 export const SkillsWrapper = ({ children }: SkillsWrapperProps) => (
   <PageSection id="skills-section">
-    <div className="-mt-20">
-      <PageSection.Title>skills</PageSection.Title>
-    </div>
+    <PageSection.Title>skills</PageSection.Title>
     <PageSection.Inset>
       <PageSection.Content className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {children}

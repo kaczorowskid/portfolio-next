@@ -19,7 +19,7 @@ export const ExperienceCardHeader = ({
   location,
 }: ExperienceCardHeaderProps) => (
   <div className="w-full flex lg:gap-7 gap-3 mb-3 lg:items-center justify-between lg:flex-row flex-col">
-    <div className="flex gap-7 items-center">
+    <div className="flex gap-3 lg:gap-7 items-center">
       <ExperienceCardHeaderLogo logo={logo} />
       <ExperienceCardHeaderHeading position={position} title={title} />
     </div>

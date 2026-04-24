@@ -7,7 +7,7 @@ export const ExperienceCardHeaderHeading = ({
   position,
   title,
 }: ExperienceCardHeaderHeadingProps) => (
-  <p className="text-2xl font-bold text-wrap">
+  <p className="text-xl md:text-2xl font-bold text-wrap">
     {position} | {title}
   </p>
 );

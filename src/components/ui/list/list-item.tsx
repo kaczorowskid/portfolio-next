@@ -9,8 +9,10 @@ type ListItemProps = {
 };
 
 export const ListItem = ({ size = "small", children }: ListItemProps) => (
-  <li className="flex items-center gap-3">
-    <ListBullet size={size} />
+  <li className="flex items-start gap-3">
+    <div className="flex items-center h-[1.5em]">
+      <ListBullet size={size} />
+    </div>
     {children}
   </li>
 );
