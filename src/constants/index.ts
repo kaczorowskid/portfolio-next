@@ -1,0 +1,9 @@
+export {
+  SITE_AUTHOR,
+  SITE_DESCRIPTION,
+  SITE_KEYWORDS,
+  SITE_LOCALE,
+  SITE_NAME,
+  SITE_TITLE,
+  SITE_URL,
+} from "./seo";
