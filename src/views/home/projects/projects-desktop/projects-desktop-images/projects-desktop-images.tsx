@@ -34,9 +34,7 @@ export const ProjectsDesktopImage = ({
             {github && (
               <ProjectsDesktopImageLink href={github} icon={SiGithub} />
             )}
-            {live && (
-              <ProjectsDesktopImageLink href={live} icon={TbLocation} />
-            )}
+            {live && <ProjectsDesktopImageLink href={live} icon={TbLocation} />}
           </div>
         </div>
       )}
