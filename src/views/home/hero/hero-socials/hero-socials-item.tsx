@@ -6,14 +6,22 @@ type HeroSocialsItemProps = {
   href: string;
   icon: IconType;
   name: string;
+  social: "email" | "github" | "linkedin";
 };
 
 export const HeroSocialsItem = ({
   href,
   icon: Icon,
   name,
+  social,
 }: HeroSocialsItemProps) => (
-  <Link href={href}>
+  <Link
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    data-umami-event="social-click"
+    data-umami-event-social={social}
+  >
     <Badge color="white" leftSection={<Icon />}>
       {name}
     </Badge>

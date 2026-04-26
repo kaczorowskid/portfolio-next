@@ -12,7 +12,7 @@ type ProjectsDesktopImageProps = {
 export const ProjectsDesktopImage = ({
   currentItem,
 }: ProjectsDesktopImageProps) => {
-  const { image, github, live } =
+  const { image, github, live, title } =
     PROJECTS_DETAILS_DATA[currentItem.length - 2] ?? PROJECTS_DETAILS_DATA[0];
 
   const ref = useRef<HTMLImageElement>(null);
@@ -32,9 +32,21 @@ export const ProjectsDesktopImage = ({
         >
           <div className="flex px-3 py-2 gap-3 bg-black rounded-lg">
             {github && (
-              <ProjectsDesktopImageLink href={github} icon={SiGithub} />
+              <ProjectsDesktopImageLink
+                href={github}
+                icon={SiGithub}
+                project={title}
+                type="github"
+              />
             )}
-            {live && <ProjectsDesktopImageLink href={live} icon={TbLocation} />}
+            {live && (
+              <ProjectsDesktopImageLink
+                href={live}
+                icon={TbLocation}
+                project={title}
+                type="live"
+              />
+            )}
           </div>
         </div>
       )}
