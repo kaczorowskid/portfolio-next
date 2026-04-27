@@ -2,13 +2,17 @@ import { AccordionItem } from "@/components/ui/accordion";
 import { ProjectsMobileDetailsItemTrigger } from "./experience-mobile-details-item-trigger";
 import { ProjectsMobileDetailsItemContent } from "./projects-mobile-details-item-content";
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 type ProjectsMobileDetailsItemProps = {
   projects: {
     title: string;
     image: StaticImageData;
     description: string;
-    technologies: string[];
+    technologies: {
+      name: string;
+      icon: IconType;
+    }[];
   };
   count: number;
 };

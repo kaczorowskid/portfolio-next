@@ -1,3 +1,4 @@
+import { IconType } from "react-icons";
 import { ProjectsDetailsItemHeader } from "./projects-details-item-header";
 import { ProjectsDetailsItemWrapper } from "./projects-details-item-wrapper";
 import { ProjectsDetailsItemDescription } from "./projects-details-item-description";
@@ -7,7 +8,10 @@ type ProjectsDetailsItemProps = {
   projects: {
     title: string;
     description: string;
-    technologies: string[];
+    technologies: {
+      name: string;
+      icon: IconType;
+    }[];
   };
   count: number;
   setElementRef: (el: HTMLDivElement) => void;

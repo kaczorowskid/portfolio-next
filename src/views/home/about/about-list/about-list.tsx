@@ -3,26 +3,26 @@ import { AboutItem } from "./about-item";
 const ABOUT_ITEMS = [
   {
     content:
-      "I'm a passionate developer with expertise in creating modern web applications and digital experiences. I focus on clean code, beautiful design, and seamless user experiences.",
-    highlightedContent: "passionate developer",
+      "I'm Damian, a full-stack developer based near Wrocław with 4 years of commercial experience. I enjoy shipping features end-to-end and feeling at home on both sides of the stack.",
+    highlightedContent: "full-stack developer",
     hasLine: true,
   },
   {
     content:
-      "With years of experience in frontend development, I specialize in React, TypeScript, and modern web technologies. I focus on creating scalable, maintainable, and user-friendly applications.",
-    highlightedContent: "frontend development",
+      "Mostly React, Next.js and TypeScript on the frontend, with Spring Boot and Java on the backend. I lean toward boring, well-supported tools that keep a team moving.",
+    highlightedContent: "React, Next.js and TypeScript",
     hasLine: false,
   },
   {
     content:
-      "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.",
-    highlightedContent: "",
+      "Lately my work has revolved around scalable frontend architecture in Nx monorepos, mentoring less experienced devs, and being the person who ends up doing thoughtful code reviews.",
+    highlightedContent: "scalable frontend architecture",
     hasLine: false,
   },
   {
     content:
-      "I'm always eager to learn new opportunities and contribute to amazing projects. Let's build something together!",
-    highlightedContent: "amazing projects",
+      "I value writing maintainable, readable code and engaging in open technical discussions — both questioning decisions and welcoming the same in return.",
+    highlightedContent: "maintainable, readable code",
     hasLine: true,
   },
 ];

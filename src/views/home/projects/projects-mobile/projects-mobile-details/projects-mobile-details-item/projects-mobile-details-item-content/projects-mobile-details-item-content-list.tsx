@@ -1,7 +1,11 @@
-import { List } from "@/components";
+import { Badge } from "@/components";
+import { IconType } from "react-icons";
 
 type ProjectsMobileDetailsItemContentListProps = {
-  technologies: string[];
+  technologies: {
+    name: string;
+    icon: IconType;
+  }[];
 };
 
 export const ProjectsMobileDetailsItemContentList = ({
@@ -9,12 +13,12 @@ export const ProjectsMobileDetailsItemContentList = ({
 }: ProjectsMobileDetailsItemContentListProps) => (
   <>
     <p className="pt-10 text-xl">Technologies I used:</p>
-    <List className="px-4 text-xl my-10 gap-y-6 grid grid-cols-2 [&>*:nth-child(odd)]:justify-self-start [&>*:nth-child(even)]:justify-self-end">
-      {technologies.map((technology, index) => (
-        <List.Item key={index} size="medium">
-          {technology}
-        </List.Item>
+    <div className="flex flex-wrap gap-2 my-10">
+      {technologies.map(({ icon: Icon, name }, index) => (
+        <Badge color="black" key={index} leftSection={<Icon />}>
+          {name}
+        </Badge>
       ))}
-    </List>
+    </div>
   </>
 );

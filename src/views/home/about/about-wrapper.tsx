@@ -7,8 +7,11 @@ type AboutWrapperProps = {
 
 export const AboutWrapper = ({ children }: AboutWrapperProps) => (
   <PageSection id="about-section">
-    <PageSection.Content className="relative overflow-hidden px-6 mt-32  mb-10">
-      {children}
-    </PageSection.Content>
+    <div className="-mt-20!">
+      <PageSection.Title>about me</PageSection.Title>
+    </div>
+    <PageSection.Inset>
+      <PageSection.Content>{children}</PageSection.Content>
+    </PageSection.Inset>
   </PageSection>
 );
