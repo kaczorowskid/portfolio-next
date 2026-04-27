@@ -1,32 +1,25 @@
-import { IconType } from "react-icons";
-import { ProjectsDetailsItemHeader } from "./projects-details-item-header";
-import { ProjectsDetailsItemWrapper } from "./projects-details-item-wrapper";
+import { Project } from "../../../projects-details.data";
 import { ProjectsDetailsItemDescription } from "./projects-details-item-description";
+import { ProjectsDetailsItemHeader } from "./projects-details-item-header";
 import { ProjectsDetailsItemTechnologies } from "./projects-details-item-technologies";
+import { ProjectsDetailsItemWrapper } from "./projects-details-item-wrapper";
 
 type ProjectsDetailsItemProps = {
-  projects: {
-    title: string;
-    description: string;
-    technologies: {
-      name: string;
-      icon: IconType;
-    }[];
-  };
+  project: Project;
   count: number;
-  setElementRef: (el: HTMLDivElement) => void;
-  isHiglighted: boolean;
+  setRef: (element: HTMLDivElement | null) => void;
+  isHighlighted: boolean;
 };
 
 export const ProjectsDetailsItem = ({
-  projects: { technologies, description, title },
+  project: { technologies, description, title },
   count,
-  setElementRef,
-  isHiglighted,
+  setRef,
+  isHighlighted,
 }: ProjectsDetailsItemProps) => (
   <ProjectsDetailsItemWrapper
-    isHiglighted={isHiglighted}
-    setElementRef={setElementRef}
+    isHighlighted={isHighlighted}
+    setRef={setRef}
     count={count}
   >
     <ProjectsDetailsItemHeader title={title} />

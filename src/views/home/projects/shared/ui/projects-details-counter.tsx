@@ -2,17 +2,17 @@ import { cn } from "@/utils";
 
 type ProjectsDetailsCounterProps = {
   count: number;
-  isHiglighted: boolean;
+  isHighlighted: boolean;
 };
 
 export const ProjectsDetailsCounter = ({
   count,
-  isHiglighted,
+  isHighlighted,
 }: ProjectsDetailsCounterProps) => (
   <div
     className={cn(
       "transition-all duration-1000  size-14 rounded-full border flex justify-center items-center bg-black text-2xl font-bold text-green-600 border-white",
-      isHiglighted ? "border-white" : "border-gray-800"
+      isHighlighted ? "border-white" : "border-gray-800"
     )}
   >
     {count}

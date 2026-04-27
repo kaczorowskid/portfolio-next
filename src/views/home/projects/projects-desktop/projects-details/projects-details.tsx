@@ -1,23 +1,23 @@
-import { ProjectsDetailsItem } from "./projects-details-item";
 import { PROJECTS_DETAILS_DATA } from "../../projects-details.data";
+import { ProjectsDetailsItem } from "./projects-details-item";
 
 type ProjectsDetailsProps = {
-  currentItem: number[];
-  setElementRef: (element: HTMLDivElement, index: number) => void;
+  activeIndex: number;
+  setRef: ((element: HTMLDivElement | null) => void)[];
 };
 
 export const ProjectsDetails = ({
-  currentItem,
-  setElementRef,
+  activeIndex,
+  setRef,
 }: ProjectsDetailsProps) => (
   <div>
-    {PROJECTS_DETAILS_DATA.map((projects, index) => (
+    {PROJECTS_DETAILS_DATA.map((project, index) => (
       <ProjectsDetailsItem
         key={index}
         count={index + 1}
-        projects={projects}
-        setElementRef={(el) => setElementRef(el, index)}
-        isHiglighted={currentItem.includes(index + 1)}
+        project={project}
+        setRef={setRef[index]}
+        isHighlighted={index <= activeIndex}
       />
     ))}
   </div>

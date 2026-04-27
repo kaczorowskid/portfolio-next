@@ -11,22 +11,35 @@ import {
   SiPrisma,
   SiReact,
   SiReactquery,
-  SiRemark,
   SiShadcnui,
   SiStyledcomponents,
   SiTailwindcss,
   SiTypescript,
   SiVitest,
-  SiZod,
 } from "react-icons/si";
 import { FaMicrochip } from "react-icons/fa";
 import { GiBearFace } from "react-icons/gi";
+
+import { IconType } from "react-icons";
+import { StaticImageData } from "next/image";
 
 import image from "@/assets/images/portfolio.png";
 import smartHome from "@/assets/images/smart-home.png";
 import board from "@/assets/images/board.png";
 
-export const PROJECTS_DETAILS_DATA = [
+export type Project = {
+  title: string;
+  image: StaticImageData;
+  description: string;
+  technologies: {
+    name: string;
+    icon: IconType;
+  }[];
+  live?: string;
+  github?: string;
+};
+
+export const PROJECTS_DETAILS_DATA: Project[] = [
   {
     title: "Personal portfolio",
     image: image,
@@ -36,11 +49,9 @@ export const PROJECTS_DETAILS_DATA = [
       { name: "Next.js", icon: SiNextdotjs },
       { name: "HTML", icon: SiHtml5 },
       { name: "CSS", icon: SiCss },
-      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
       { name: "TypeScript", icon: SiTypescript },
       { name: "Shadcn/UI", icon: SiShadcnui },
-      { name: "Remark", icon: SiRemark },
-      { name: "Zod", icon: SiZod },
     ],
     live: "https://",
     github: "https://github.com",
@@ -58,7 +69,7 @@ export const PROJECTS_DETAILS_DATA = [
       { name: "Zustand", icon: GiBearFace },
       { name: "Shadcn/UI", icon: SiShadcnui },
       { name: "Tanstack-Query", icon: SiReactquery },
-      { name: "Tailwind", icon: SiTailwindcss },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
       { name: "Vitest", icon: SiVitest },
       { name: "Prisma", icon: SiPrisma },
       { name: "PostgreSQL", icon: SiPostgresql },

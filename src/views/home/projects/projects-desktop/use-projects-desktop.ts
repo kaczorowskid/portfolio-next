@@ -1,50 +1,50 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
-const THRESHOLD = 0.5;
+const VISIBILITY_THRESHOLD = 0.5;
 
-export const useProjectsDesktop = () => {
-  const elementRef = useRef<HTMLDivElement[]>([]);
+const NO_ACTIVE_INDEX = -1;
 
-  const [currentItem, setCurrentItem] = useState<number[]>([]);
+export const useProjectsDesktop = (count: number) => {
+  const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const [activeIndex, setActiveIndex] = useState(NO_ACTIVE_INDEX);
+
+  const setRef = useMemo(
+    () =>
+      Array.from(
+        { length: count },
+        (_, index) => (element: HTMLDivElement | null) => {
+          elementsRef.current[index] = element;
+        }
+      ),
+    [count]
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        const visible = entries
-          .filter((e) => e.intersectionRatio >= THRESHOLD)
-          .map((e) => Number(e.target.getAttribute("data-index")))
-          .sort((a, b) => a - b);
+        const visibleIndexes = entries
+          .filter((entry) => entry.intersectionRatio >= VISIBILITY_THRESHOLD)
+          .map((entry) =>
+            elementsRef.current.indexOf(entry.target as HTMLDivElement)
+          )
+          .filter((index) => index !== NO_ACTIVE_INDEX);
 
-        if (visible.length === 0) return;
+        if (visibleIndexes.length === 0) return;
 
-        setCurrentItem(() => {
-          if (visible.length === 0) return [];
-
-          const max = Math.max(...visible);
-          return Array.from({ length: max + 1 }, (_, i) => i);
-        });
+        setActiveIndex(Math.max(...visibleIndexes));
       },
       {
-        threshold: THRESHOLD,
+        threshold: VISIBILITY_THRESHOLD,
         rootMargin: "0px 0px -20px 0px",
       }
     );
 
-    elementRef.current.forEach(
+    elementsRef.current.forEach(
       (element) => element && observer.observe(element)
     );
 
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
+    return () => observer.disconnect();
+  }, [count]);
 
-  const setElementRef = (element: HTMLDivElement, index: number) => {
-    if (element) elementRef.current[index] = element;
-  };
-
-  return {
-    setElementRef,
-    currentItem,
-  };
+  return { activeIndex, setRef };
 };

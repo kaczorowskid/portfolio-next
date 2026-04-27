@@ -1,19 +1,19 @@
 import Image from "next/image";
+import { useRef } from "react";
 import { SiGithub } from "react-icons/si";
 import { TbLocation } from "react-icons/tb";
-import { useRef } from "react";
 import { PROJECTS_DETAILS_DATA } from "../../projects-details.data";
 import { ProjectsDesktopImageLink } from "./projects-desktop-images-link";
 
 type ProjectsDesktopImageProps = {
-  currentItem: number[];
+  activeIndex: number;
 };
 
 export const ProjectsDesktopImage = ({
-  currentItem,
+  activeIndex,
 }: ProjectsDesktopImageProps) => {
-  const { image, github, live, title } =
-    PROJECTS_DETAILS_DATA[currentItem.length - 2] ?? PROJECTS_DETAILS_DATA[0];
+  const project = PROJECTS_DETAILS_DATA[activeIndex] ?? PROJECTS_DETAILS_DATA[0];
+  const { image, github, live, title } = project;
 
   const ref = useRef<HTMLImageElement>(null);
 

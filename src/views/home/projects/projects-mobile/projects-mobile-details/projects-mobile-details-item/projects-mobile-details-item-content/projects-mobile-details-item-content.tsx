@@ -1,23 +1,15 @@
 import { AccordionContent } from "@/components/ui/accordion";
+import { Project } from "../../../../projects-details.data";
 import { ProjectsMobileDetailsItemContentDescription } from "./projects-mobile-details-item-content-description";
-import { ProjectsMobileDetailsItemContentList } from "./projects-mobile-details-item-content-list";
 import { ProjectsMobileDetailsItemContentImage } from "./projects-mobile-details-item-content-image";
-import { StaticImageData } from "next/image";
-import { IconType } from "react-icons";
+import { ProjectsMobileDetailsItemContentList } from "./projects-mobile-details-item-content-list";
 
 type ProjectsMobileDetailsItemContentProps = {
-  projects: {
-    image: StaticImageData;
-    description: string;
-    technologies: {
-      name: string;
-      icon: IconType;
-    }[];
-  };
+  project: Project;
 };
 
 export const ProjectsMobileDetailsItemContent = ({
-  projects: { technologies, description, image },
+  project: { technologies, description, image },
 }: ProjectsMobileDetailsItemContentProps) => (
   <AccordionContent>
     <ProjectsMobileDetailsItemContentImage image={image} />

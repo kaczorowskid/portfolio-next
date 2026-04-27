@@ -12,7 +12,7 @@ export const ProjectsMobileDetailsItemTrigger = ({
 }: ProjectsMobileDetailsItemTriggerProps) => (
   <AccordionTrigger className="text-2xl flex items-center">
     <div className="flex items-center gap-6">
-      <ProjectsDetailsCounter count={count} isHiglighted={false} />
+      <ProjectsDetailsCounter count={count} isHighlighted={false} />
       <span>{title}</span>
     </div>
   </AccordionTrigger>

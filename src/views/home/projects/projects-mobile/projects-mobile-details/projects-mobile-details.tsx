@@ -7,11 +7,11 @@ export const ProjectsMobileDetails = () => {
 
   return (
     <Accordion defaultValue={allTitles} type="multiple">
-      {PROJECTS_DETAILS_DATA.map((projects, index) => (
+      {PROJECTS_DETAILS_DATA.map((project, index) => (
         <ProjectsMobileDetailsItem
           key={index}
           count={index + 1}
-          projects={projects}
+          project={project}
         />
       ))}
     </Accordion>
