@@ -1,4 +1,4 @@
-# Portfolio — Damian Kaczorowski
+# Personal Portfolio
 
 Personal portfolio website built with Next.js, showcasing my work as a Software Developer specializing in Java, React, Next.js and TypeScript.
 
@@ -28,13 +28,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Available Scripts
 
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Start the development server with Turbopack |
-| `npm run build` | Build the production bundle |
-| `npm run start` | Start the production server |
-| `npm run lint` | Run Biome checks |
-| `npm run format` | Format the codebase with Biome |
+| Script           | Description                                 |
+| ---------------- | ------------------------------------------- |
+| `npm run dev`    | Start the development server with Turbopack |
+| `npm run build`  | Build the production bundle                 |
+| `npm run start`  | Start the production server                 |
+| `npm run lint`   | Run Biome checks                            |
+| `npm run format` | Format the codebase with Biome              |
 
 ## Project Structure
 
