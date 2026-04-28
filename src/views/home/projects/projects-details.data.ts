@@ -23,7 +23,7 @@ import { GiBearFace } from "react-icons/gi";
 import { IconType } from "react-icons";
 import { StaticImageData } from "next/image";
 
-import image from "@/assets/images/portfolio.png";
+import portfolio from "@/assets/images/portfolio.png";
 import smartHome from "@/assets/images/smart-home.png";
 import board from "@/assets/images/board.png";
 
@@ -42,7 +42,7 @@ export type Project = {
 export const PROJECTS_DETAILS_DATA: Project[] = [
   {
     title: "Personal portfolio",
-    image: image,
+    image: portfolio,
     description:
       "A personal portfolio website built with Next.js to showcase my projects, skills, and experience. Focused on clean design, smooth navigation, and responsiveness across all devices.",
     technologies: [
