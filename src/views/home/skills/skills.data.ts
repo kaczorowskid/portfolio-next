@@ -22,6 +22,7 @@ import {
   SiDocker,
   SiGit,
   SiFigma,
+  SiNestjs,
 } from "react-icons/si";
 import { TbApi, TbDeviceMobile, TbBrandRedux } from "react-icons/tb";
 
@@ -50,7 +51,7 @@ export const SKILLS_DATA = {
       { name: "Java Spring Boot", icon: SiSpringboot },
       { name: "Spring Hibernate", icon: SiHibernate },
       { name: "Node.js", icon: SiNodedotjs },
-      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Nest.js", icon: SiNestjs },
       { name: "express.js", icon: SiExpress },
       { name: "PostgreSQL", icon: SiPostgresql },
       { name: "Mongo DB", icon: SiMongodb },
