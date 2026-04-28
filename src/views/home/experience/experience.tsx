@@ -1,11 +1,16 @@
 import { ExperienceCard } from "./experience-card";
 import { EXPERIENCE_DATA } from "./experience.data";
-import { ExperienceWrapper } from "./experience-wrapper";
+import { PageSection } from "@/components";
 
 export const Experience = () => (
-  <ExperienceWrapper>
-    {EXPERIENCE_DATA.map((experience, index) => (
-      <ExperienceCard key={index} experience={experience} />
-    ))}
-  </ExperienceWrapper>
+  <PageSection id="experience-section" variant="black">
+    <PageSection.Title>experience</PageSection.Title>
+    <PageSection.Inset>
+      <PageSection.Content>
+        {EXPERIENCE_DATA.map((experience, index) => (
+          <ExperienceCard key={index} experience={experience} />
+        ))}
+      </PageSection.Content>
+    </PageSection.Inset>
+  </PageSection>
 );

@@ -1,8 +1,13 @@
-import { ProjectsMobileWrapper } from "./projects-mobile-wrapper";
 import { ProjectsMobileDetails } from "./projects-mobile-details";
+import { PageSection } from "@/components";
 
 export const ProjectsMobile = () => (
-  <ProjectsMobileWrapper>
-    <ProjectsMobileDetails />
-  </ProjectsMobileWrapper>
+  <PageSection id="projects-section" variant="black">
+    <PageSection.Title>projects</PageSection.Title>
+    <PageSection.Inset>
+      <PageSection.Content className="relative">
+        <ProjectsMobileDetails />
+      </PageSection.Content>
+    </PageSection.Inset>
+  </PageSection>
 );
