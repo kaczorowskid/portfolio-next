@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { SiGithub } from "react-icons/si";
-import { TbLocation } from "react-icons/tb";
+import { TbWorld } from "react-icons/tb";
 import { PROJECTS_DETAILS_DATA } from "../../projects-details.data";
 import { ProjectsDesktopImageLink } from "./projects-desktop-images-link";
 
@@ -37,7 +37,7 @@ export const ProjectsDesktopImage = ({
               {live && (
                 <ProjectsDesktopImageLink
                   href={live}
-                  icon={TbLocation}
+                  icon={TbWorld}
                   project={title}
                   type="live"
                 />

@@ -1,6 +1,6 @@
 import Image, { type StaticImageData } from "next/image";
 import { SiGithub } from "react-icons/si";
-import { TbLocation } from "react-icons/tb";
+import { TbWorld } from "react-icons/tb";
 import { ProjectsMobileDetailsItemContentImageLink } from "./projects-mobile-details-item-content-image-link";
 
 type ProjectsMobileDetailsItemContentImageProps = {
@@ -32,7 +32,7 @@ export const ProjectsMobileDetailsItemContentImage = ({
           {live && (
             <ProjectsMobileDetailsItemContentImageLink
               href={live}
-              icon={TbLocation}
+              icon={TbWorld}
               project={title}
               type="live"
             />
