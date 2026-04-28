@@ -1,1 +1,1 @@
-export * from "./page-section";
+export { PageSection } from "./page-section";

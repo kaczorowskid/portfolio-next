@@ -1,24 +1,38 @@
-import { ReactNode } from "react";
-import { Container } from "../container";
-import { PageSectionTitle } from "./page-section-title";
-import { cn } from "@/utils";
+import { ComponentProps, ReactNode } from "react";
 
-type PageSectionProps = {
-  title: string;
+import { cn } from "@/utils";
+import { PageSectionTitle } from "./page-section-title";
+import { PageSectionInset } from "./page-section-inset";
+import { PageSectionContent } from "./page-section-content";
+
+type Variant = "white" | "black";
+
+type NewPageSectionProps = {
+  variant?: Variant;
   children: ReactNode;
-  className?: string;
+} & ComponentProps<"section">;
+
+const MAP_VARIANT_TO_TAILWIND_CLASS: Record<Variant, string> = {
+  black: "bg-black text-white",
+  white: "bg-white text-black",
 };
 
 export const PageSection = ({
-  title,
-  className,
+  variant = "white",
   children,
-}: PageSectionProps) => (
-  <Container
-    as="section"
-    className="flex flex-col justify-center items-center py-20 px-16 mx-auto max-w-350"
+  ...props
+}: NewPageSectionProps) => (
+  <section
+    {...props}
+    className={cn(
+      "w-full flex flex-col items-center",
+      MAP_VARIANT_TO_TAILWIND_CLASS[variant]
+    )}
   >
-    <PageSectionTitle title={title} />
-    <div className={cn("mt-20 w-full", className)}>{children}</div>
-  </Container>
+    {children}
+  </section>
 );
+
+PageSection.Title = PageSectionTitle;
+PageSection.Inset = PageSectionInset;
+PageSection.Content = PageSectionContent;

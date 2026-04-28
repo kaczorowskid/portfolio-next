@@ -1,6 +1,7 @@
-export * from "./badge";
-export * from "./button";
-export * from "./input";
-export * from "./label";
-export * from "./textarea";
-export * from "./list";
+export { Badge } from "./badge";
+export { Button } from "./button";
+export { Input } from "./input";
+export { Label } from "./label";
+export { Textarea } from "./textarea";
+export { List } from "./list";
+export { Accordion } from "./accordion";

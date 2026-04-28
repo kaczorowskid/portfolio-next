@@ -1,19 +1,5 @@
-import { About } from "@/views/about";
-import { Contact } from "@/views/contact";
-import { Experience } from "@/views/experience";
-import { Hero } from "@/views/hero";
-import { Portfolio } from "@/views/portfolio";
-import { Skills } from "@/views/skills";
+import { Home } from "@/views";
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Skills />
-      {/* <Contact /> */}
-    </>
-  );
+export default function HomeIndex() {
+  return <Home />;
 }

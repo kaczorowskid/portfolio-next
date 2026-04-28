@@ -1,1 +1,1 @@
-export * from "./main-layout-footer";
+export { MainLayoutFooter } from "./main-layout-footer";

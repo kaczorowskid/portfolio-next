@@ -1,1 +1,1 @@
-export * from "./main-layout-navbar";
+export { MainLayoutNavbar } from "./main-layout-navbar";

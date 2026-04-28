@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio
+
+Personal portfolio website built with Next.js, showcasing my work as a Software Developer specializing in Java, React, Next.js and TypeScript.
+
+## Tech Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org) (App Router, Turbopack)
+- **Runtime:** React 19
+- **Language:** TypeScript
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com)
+- **UI Primitives:** [Radix UI](https://www.radix-ui.com)
+- **Forms:** [React Hook Form](https://react-hook-form.com) + [Zod](https://zod.dev)
+- **Content:** Markdown via `gray-matter` and `remark`
+- **Analytics:** [Umami](https://umami.is)
+- **Tooling:** [Biome](https://biomejs.dev) for linting and formatting
+- **Fonts:** Geist Sans & Geist Mono via `next/font`
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Script           | Description                                 |
+| ---------------- | ------------------------------------------- |
+| `npm run dev`    | Start the development server with Turbopack |
+| `npm run build`  | Build the production bundle                 |
+| `npm run start`  | Start the production server                 |
+| `npm run lint`   | Run Biome checks                            |
+| `npm run format` | Format the codebase with Biome              |
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/            # Next.js App Router entry (layout, page, sitemap, robots)
+├── assets/         # Static assets
+├── components/     # Shared components (layout, UI, scripts)
+├── constants/      # Site-wide constants (SEO config, etc.)
+├── lib/            # Data loaders (e.g. markdown posts)
+├── utils/          # Utility helpers
+└── views/          # Page-level views composed of sections
+    └── home/       # Hero, About, Experience, Projects, Skills
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SEO & Metadata
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Site metadata, Open Graph and Twitter cards are configured in `src/app/layout.tsx` and driven by constants in `src/constants/seo.ts`. Structured data is injected via `JsonLdScript`, and a sitemap and `robots.txt` are generated from `src/app/sitemap.ts` and `src/app/robots.ts`.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The project is optimized for deployment on [Vercel](https://vercel.com). Any platform with Node.js support will also work — run `npm run build` followed by `npm run start`.

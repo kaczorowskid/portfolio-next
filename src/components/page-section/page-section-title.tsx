@@ -1,7 +1,9 @@
+import { ReactNode } from "react";
+
 type PageSectionTitleProps = {
-  title: string;
+  children: ReactNode;
 };
 
-export const PageSectionTitle = ({ title }: PageSectionTitleProps) => (
-  <h2 className="text-6xl md:text-9xl font-bold">{title}</h2>
+export const PageSectionTitle = ({ children }: PageSectionTitleProps) => (
+  <h2 className="text-6xl mt-20 md:text-9xl font-bold">{children}</h2>
 );
