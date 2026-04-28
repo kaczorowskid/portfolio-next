@@ -1,7 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 
-const VISIBILITY_THRESHOLD = 0.5;
-
 const NO_ACTIVE_INDEX = -1;
 
 export const useProjectsDesktop = (count: number) => {
@@ -22,20 +20,19 @@ export const useProjectsDesktop = (count: number) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        const visibleIndexes = entries
-          .filter((entry) => entry.intersectionRatio >= VISIBILITY_THRESHOLD)
-          .map((entry) =>
-            elementsRef.current.indexOf(entry.target as HTMLDivElement)
-          )
-          .filter((index) => index !== NO_ACTIVE_INDEX);
-
-        if (visibleIndexes.length === 0) return;
-
-        setActiveIndex(Math.max(...visibleIndexes));
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const index = elementsRef.current.indexOf(
+            entry.target as HTMLDivElement
+          );
+          if (index !== NO_ACTIVE_INDEX) {
+            setActiveIndex(index);
+          }
+        });
       },
       {
-        threshold: VISIBILITY_THRESHOLD,
-        rootMargin: "0px 0px -20px 0px",
+        rootMargin: "-50% 0px -50% 0px",
+        threshold: 0,
       }
     );
 
