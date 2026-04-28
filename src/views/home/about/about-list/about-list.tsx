@@ -3,7 +3,7 @@ import { AboutItem } from "./about-item";
 const ABOUT_ITEMS = [
   {
     content:
-      "I'm Damian, a full-stack developer based near Wrocław with 4 years of commercial experience. I enjoy shipping features end-to-end and feeling at home on both sides of the stack.",
+      "I'm Damian, a full-stack developer based near Wrocław with over 4 years of commercial experience. I enjoy shipping features end-to-end and feeling at home on both sides of the stack.",
     highlightedContent: "full-stack developer",
     hasLine: true,
   },

@@ -17,7 +17,7 @@ export const ProjectsDesktopImageLink = ({
     target="_blank"
     rel="noopener noreferrer"
     href={href}
-    data-umami-event="project-link-click"
+    data-umami-event="project-event"
     data-umami-event-project={project}
     data-umami-event-type={type}
   >

@@ -12,13 +12,14 @@ type ProjectsDesktopImageProps = {
 export const ProjectsDesktopImage = ({
   activeIndex,
 }: ProjectsDesktopImageProps) => {
-  const project = PROJECTS_DETAILS_DATA[activeIndex] ?? PROJECTS_DETAILS_DATA[0];
+  const project =
+    PROJECTS_DETAILS_DATA[activeIndex] ?? PROJECTS_DETAILS_DATA[0];
   const { image, github, live, title } = project;
 
   const ref = useRef<HTMLImageElement>(null);
 
   return (
-    <div className="aspect-[16/9] pr-16 sticky top-[calc(50%-150px)]">
+    <div className="aspect-video pr-16 sticky top-[calc(50%-150px)]">
       <Image
         ref={ref}
         className="size-full object-cover rounded-2xl"

@@ -19,7 +19,7 @@ export const HeroSocialsItem = ({
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    data-umami-event="social-click"
+    data-umami-event="social-hero-event"
     data-umami-event-social={social}
   >
     <Badge color="white" leftSection={<Icon />}>

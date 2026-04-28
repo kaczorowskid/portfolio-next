@@ -27,7 +27,7 @@ export const MainLayoutFooterLinks = () => (
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          data-umami-event="social-click-footer"
+          data-umami-event="social-footer-event"
           data-umami-event-social={social}
         >
           {name}

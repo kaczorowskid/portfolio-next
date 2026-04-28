@@ -53,8 +53,8 @@ export const PROJECTS_DETAILS_DATA: Project[] = [
       { name: "TypeScript", icon: SiTypescript },
       { name: "Shadcn/UI", icon: SiShadcnui },
     ],
-    live: "https://",
-    github: "https://github.com",
+    live: "https://damian-kaczorowski.pl/",
+    github: "https://github.com/kaczorowskid/portfolio-next",
   },
   {
     title: "Smart Home System",
@@ -78,8 +78,7 @@ export const PROJECTS_DETAILS_DATA: Project[] = [
       { name: "Arduino", icon: SiArduino },
       { name: "NodeMCU", icon: SiEspressif },
     ],
-    live: undefined,
-    github: "https://github.com",
+    github: "https://github.com/kaczorowskid/smart-home-system",
   },
   {
     title: "Ticket tracker",
@@ -97,5 +96,6 @@ export const PROJECTS_DETAILS_DATA: Project[] = [
       { name: "Antd", icon: SiAntdesign },
       { name: "Express.js", icon: SiExpress },
     ],
+    github: "https://github.com/kaczorowskid/board-frontend",
   },
 ];
