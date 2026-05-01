@@ -2,7 +2,7 @@ import { ProjectsMobileDetails } from "./projects-mobile-details";
 import { PageSection } from "@/components";
 
 export const ProjectsMobile = () => (
-  <PageSection id="projects-section" variant="black">
+  <PageSection variant="black">
     <PageSection.Title>projects</PageSection.Title>
     <PageSection.Inset>
       <PageSection.Content className="relative">

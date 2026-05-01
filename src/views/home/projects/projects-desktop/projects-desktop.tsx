@@ -12,7 +12,7 @@ export const ProjectsDesktop = () => {
   );
 
   return (
-    <PageSection id="projects-section" variant="black">
+    <PageSection variant="black">
       <PageSection.Title>projects</PageSection.Title>
       <PageSection.Inset>
         <PageSection.Content className="relative grid grid-cols-2 min-h-screen">
