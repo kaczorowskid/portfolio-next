@@ -1,12 +1,12 @@
 import { List } from "@/components";
 
-type ExperienceCardAchievementsProps = {
+type ExperienceMobileDetailsCardContentAchievementsProps = {
   achievements: string[];
 };
 
-export const ExperienceCardAchievements = ({
+export const ExperienceMobileDetailsCardContentAchievements = ({
   achievements,
-}: ExperienceCardAchievementsProps) => (
+}: ExperienceMobileDetailsCardContentAchievementsProps) => (
   <List className="mb-6">
     {achievements.map((achievement, index) => (
       <List.Item key={index}>{achievement}</List.Item>

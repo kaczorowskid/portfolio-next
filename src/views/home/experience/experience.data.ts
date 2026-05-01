@@ -20,11 +20,28 @@ import {
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { GiBearFace } from "react-icons/gi";
+import { IconType } from "react-icons";
+import { StaticImageData } from "next/image";
 
 import cybLogo from "@/assets/logos/codeyourbrand_logo.jpeg";
 import codetainLogo from "@/assets/logos/codetain_logo.jpeg";
 
-export const EXPERIENCE_DATA = [
+export type Experience = {
+  id: string;
+  company: string;
+  position: string;
+  location: string;
+  period: string;
+  logo: StaticImageData;
+  description: string;
+  achievements: string[];
+  technologies: {
+    name: string;
+    icon: IconType;
+  }[];
+};
+
+export const EXPERIENCE_DATA: Experience[] = [
   {
     achievements: [
       "Delivered and owned end-to-end features for the Two Continents project using Next.js and Spring Boot, ensuring smooth data exchange and performance optimization",

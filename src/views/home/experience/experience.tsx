@@ -1,16 +1,13 @@
-import { ExperienceCard } from "./experience-card";
-import { EXPERIENCE_DATA } from "./experience.data";
-import { PageSection } from "@/components";
+import { ExperienceDesktop } from "./experience-desktop";
+import { ExperienceMobile } from "./experience-mobile";
 
 export const Experience = () => (
-  <PageSection id="experience-section" variant="black">
-    <PageSection.Title>experience</PageSection.Title>
-    <PageSection.Inset>
-      <PageSection.Content>
-        {EXPERIENCE_DATA.map((experience, index) => (
-          <ExperienceCard key={index} experience={experience} />
-        ))}
-      </PageSection.Content>
-    </PageSection.Inset>
-  </PageSection>
+  <div id="experience-section">
+    <div className="hidden lg:block">
+      <ExperienceDesktop />
+    </div>
+    <div className="block lg:hidden">
+      <ExperienceMobile />
+    </div>
+  </div>
 );

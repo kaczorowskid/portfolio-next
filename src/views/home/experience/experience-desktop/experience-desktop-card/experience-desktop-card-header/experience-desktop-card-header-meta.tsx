@@ -1,12 +1,12 @@
-type ExperienceCardHeaderMetaProps = {
+type ExperienceDesktopCardHeaderMetaProps = {
   period: string;
   location: string;
 };
 
-export const ExperienceCardHeaderMeta = ({
+export const ExperienceDesktopCardHeaderMeta = ({
   period,
   location,
-}: ExperienceCardHeaderMetaProps) => (
+}: ExperienceDesktopCardHeaderMetaProps) => (
   <div>
     <p>{period}</p>
     <p className="text-zinc-300">{location}</p>
