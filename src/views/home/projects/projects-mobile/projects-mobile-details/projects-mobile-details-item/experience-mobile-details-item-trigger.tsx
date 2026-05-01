@@ -11,7 +11,7 @@ export const ProjectsMobileDetailsItemTrigger = ({
   title,
 }: ProjectsMobileDetailsItemTriggerProps) => (
   <AccordionTrigger className="text-2xl flex items-center">
-    <div className="flex items-center gap-6">
+    <div className="flex items-center gap-3">
       <ProjectsDetailsCounter count={count} isHighlighted={false} />
       <span>{title}</span>
     </div>

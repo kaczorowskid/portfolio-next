@@ -17,7 +17,7 @@ export const ExperienceMobileDetailsCardTrigger = ({
   position,
 }: ExperienceMobileDetailsCardTriggerProps) => (
   <AccordionTrigger className="flex items-center">
-    <div className="w-full flex items-center gap-6">
+    <div className="w-full flex items-center gap-3">
       <ExperienceMobileDetailsCardTriggerLogo logo={logo} company={company} />
       <ExperienceMobileDetailsCardTriggerMeta
         company={company}
