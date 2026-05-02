@@ -1,21 +1,26 @@
 import { cn } from "@/utils";
+import { MAIN_LAYOUT_NAVBAR_MENU_ID } from "./main-layout-navbar.constants";
 
 type MainLayoutNavbarButtonProps = {
   isOpen: boolean;
-  toogleMenu: () => void;
+  toggleMenu: () => void;
 };
 
 export const MainLayoutNavbarButton = ({
   isOpen,
-  toogleMenu,
+  toggleMenu,
 }: MainLayoutNavbarButtonProps) => (
   <button
+    type="button"
+    onClick={toggleMenu}
+    aria-expanded={isOpen}
+    aria-controls={MAIN_LAYOUT_NAVBAR_MENU_ID}
+    aria-label={isOpen ? "Close menu" : "Open menu"}
     className="hidden fixed top-4 right-4 size-10 lg:top-10 lg:right-10 lg:size-16 bg-white mix-blend-difference rounded-full md:flex justify-center items-center font-bold z-50 flex-col cursor-pointer transition-all duration-500"
-    onClick={toogleMenu}
   >
     <div
       className={cn(
-        "h-1 w-6 my-0.5 rounded-full bg-black  transition ease transform duration-300",
+        "h-1 w-6 my-0.5 rounded-full bg-black transition ease transform duration-300",
         isOpen && "rotate-45 translate-y-2",
       )}
     />

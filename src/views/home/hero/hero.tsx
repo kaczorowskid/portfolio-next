@@ -1,8 +1,8 @@
-import { HeroTitle } from "./hero-title";
-import { HeroDescription } from "./hero-description";
-import { HeroSocials } from "./hero-socials";
-import { HeroImage } from "./hero-image";
 import { PageSection } from "@/components";
+import { HeroDescription } from "./hero-description";
+import { HeroImage } from "./hero-image";
+import { HeroSocials } from "./hero-socials";
+import { HeroTitle } from "./hero-title";
 
 export const Hero = () => (
   <PageSection id="hero-section">

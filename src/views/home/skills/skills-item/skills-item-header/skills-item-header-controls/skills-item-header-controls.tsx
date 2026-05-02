@@ -4,8 +4,8 @@ const BULLET_COLORS = ["red", "orange", "green"] as const;
 
 export const SkillsItemHeaderControls = () => (
   <div className="flex items-center gap-2">
-    {BULLET_COLORS.map((bulletColor, index) => (
-      <SkillsItemHeaderControlsBullet key={index} color={bulletColor} />
+    {BULLET_COLORS.map((bulletColor) => (
+      <SkillsItemHeaderControlsBullet key={bulletColor} color={bulletColor} />
     ))}
   </div>
 );

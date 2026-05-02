@@ -1,7 +1,7 @@
 import { AccordionItem } from "@/components/ui/accordion";
-import { ExperienceMobileDetailsCardTrigger } from "./experience-mobile-details-card-trigger";
+import type { Experience } from "../../../experience.data";
 import { ExperienceMobileDetailsCardContent } from "./experience-mobile-details-card-content";
-import { Experience } from "../../../experience.data";
+import { ExperienceMobileDetailsCardTrigger } from "./experience-mobile-details-card-trigger";
 
 type ExperienceMobileDetailsCardProps = {
   experience: Experience;

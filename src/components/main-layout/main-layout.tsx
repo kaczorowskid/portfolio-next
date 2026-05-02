@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import { MainLayoutNavbar } from "./main-layout-navbar";
+import type { ReactNode } from "react";
 import { MainLayoutFooter } from "./main-layout-footer";
+import { MainLayoutNavbar } from "./main-layout-navbar";
 
 type MainLayoutProps = {
   children: ReactNode;

@@ -1,5 +1,5 @@
+import type { IconType } from "react-icons";
 import { Badge } from "@/components";
-import { IconType } from "react-icons";
 
 type ExperienceDesktopCardTechnologiesProps = {
   technologies: {
@@ -12,8 +12,8 @@ export const ExperienceDesktopCardTechnologies = ({
   technologies,
 }: ExperienceDesktopCardTechnologiesProps) => (
   <div className="flex gap-2 flex-wrap">
-    {technologies.map(({ icon: Icon, name }, index) => (
-      <Badge color="black" key={index} leftSection={<Icon />}>
+    {technologies.map(({ icon: Icon, name }) => (
+      <Badge color="black" key={name} leftSection={<Icon />}>
         {name}
       </Badge>
     ))}

@@ -1,6 +1,6 @@
+import { PageSection } from "@/components";
 import { EXPERIENCE_DATA } from "../experience.data";
 import { ExperienceDesktopCard } from "./experience-desktop-card";
-import { PageSection } from "@/components";
 
 export const ExperienceDesktop = () => (
   <PageSection variant="black">

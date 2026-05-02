@@ -1,1 +1,1 @@
-export { type Post, getPostData, getSortedPostsData } from "./posts";
+export { getPostData, getSortedPostsData, type Post } from "./posts";

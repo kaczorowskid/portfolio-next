@@ -1,8 +1,8 @@
 import { AccordionContent } from "@/components/ui/accordion";
-import { Project } from "../../../../projects-details.data";
+import type { Project } from "../../../../projects-details.data";
 import { ProjectsMobileDetailsItemContentDescription } from "./projects-mobile-details-item-content-description";
-import { ProjectsMobileDetailsItemContentList } from "./projects-mobile-details-item-content-list";
 import { ProjectsMobileDetailsItemContentImage } from "./projects-mobile-details-item-content-image";
+import { ProjectsMobileDetailsItemContentList } from "./projects-mobile-details-item-content-list";
 
 type ProjectsMobileDetailsItemContentProps = {
   project: Project;

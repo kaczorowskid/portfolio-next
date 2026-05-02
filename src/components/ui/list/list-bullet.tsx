@@ -1,6 +1,6 @@
 import { cn } from "@/utils";
 import { ListProps } from "./list";
-import { Size } from "./list-item";
+import type { Size } from "./list-item";
 
 type ListBulletProps = {
   size?: Size;

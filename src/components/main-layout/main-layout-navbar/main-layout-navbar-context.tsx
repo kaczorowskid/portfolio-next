@@ -1,10 +1,10 @@
 "use client";
 
-import { createContext, ReactNode, useContext, useState } from "react";
+import { createContext, type ReactNode, useContext, useState } from "react";
 
 type MainLayoutNavbarContextProps = {
   isOpen: boolean;
-  toogleMenu: () => void;
+  toggleMenu: () => void;
 };
 
 const MainLayoutNavbarContext =
@@ -19,12 +19,12 @@ export const MainLayoutNavbarProvider = ({
 }: MainLayoutNavbarProviderProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toogleMenu = () => {
+  const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
 
   return (
-    <MainLayoutNavbarContext.Provider value={{ isOpen, toogleMenu }}>
+    <MainLayoutNavbarContext.Provider value={{ isOpen, toggleMenu }}>
       {children}
     </MainLayoutNavbarContext.Provider>
   );

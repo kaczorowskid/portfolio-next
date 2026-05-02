@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { ListBullet } from "./list-bullet";
 
 export type Size = "small" | "medium";

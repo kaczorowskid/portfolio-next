@@ -13,7 +13,7 @@ export const ProjectsDetails = ({
   <div>
     {PROJECTS_DETAILS_DATA.map((project, index) => (
       <ProjectsDetailsItem
-        key={index}
+        key={project.title}
         count={index + 1}
         project={project}
         setRef={setRef[index]}

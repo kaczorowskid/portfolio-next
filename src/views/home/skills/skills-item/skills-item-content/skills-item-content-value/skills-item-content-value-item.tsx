@@ -1,4 +1,4 @@
-import { Color } from "../../skills-item.types";
+import type { Color } from "../../skills-item.types";
 
 type SkillsItemContentValueItemProps = {
   name: string;

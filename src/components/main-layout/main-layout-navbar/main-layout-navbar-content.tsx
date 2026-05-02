@@ -5,11 +5,11 @@ import { useMainLayoutNavbarContext } from "./main-layout-navbar-context";
 import { MainLayoutNavbarMenu } from "./main-layout-navbar-menu";
 
 export const MainLayoutNavbarContent = () => {
-  const { isOpen, toogleMenu } = useMainLayoutNavbarContext();
+  const { isOpen, toggleMenu } = useMainLayoutNavbarContext();
 
   return (
     <>
-      <MainLayoutNavbarButton isOpen={isOpen} toogleMenu={toogleMenu} />
+      <MainLayoutNavbarButton isOpen={isOpen} toggleMenu={toggleMenu} />
       <MainLayoutNavbarMenu isOpen={isOpen} />
     </>
   );

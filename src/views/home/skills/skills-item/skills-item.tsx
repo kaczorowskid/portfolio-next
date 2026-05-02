@@ -1,7 +1,7 @@
+import type { IconType } from "react-icons";
+import type { Color } from "./skills-item.types";
 import { SkillsItemContent } from "./skills-item-content";
 import { SkillsItemHeader } from "./skills-item-header";
-import { Color } from "./skills-item.types";
-import { IconType } from "react-icons";
 
 export type SkillsItemProps = {
   technology: string;

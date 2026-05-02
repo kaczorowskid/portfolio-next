@@ -1,5 +1,5 @@
-import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
 import { TbMail } from "react-icons/tb";
 import { HeroSocialsItem } from "./hero-socials-item";
 
@@ -26,9 +26,9 @@ const SOCIALS_ITEMS = [
 
 export const HeroSocials = () => (
   <div className="flex gap-6 flex-wrap">
-    {SOCIALS_ITEMS.map(({ href, icon, name, social }, index) => (
+    {SOCIALS_ITEMS.map(({ href, icon, name, social }) => (
       <HeroSocialsItem
-        key={index}
+        key={social}
         href={href}
         icon={icon}
         name={name}

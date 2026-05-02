@@ -10,17 +10,18 @@ type MainLayoutNavbarMenuLinkProps = {
 export const MainLayoutNavbarMenuLink = ({
   item: { name, section },
 }: MainLayoutNavbarMenuLinkProps) => {
-  const { toogleMenu } = useMainLayoutNavbarContext();
+  const { toggleMenu } = useMainLayoutNavbarContext();
 
   const handleScrollToSection = () => {
     const targetElement = document.getElementById(section);
     targetElement?.scrollIntoView({ behavior: "smooth" });
 
-    toogleMenu();
+    toggleMenu();
   };
 
   return (
     <button
+      type="button"
       onClick={handleScrollToSection}
       className="text-3xl cursor-pointer font-medium text-gray-400 hover:text-white transition-colors"
     >

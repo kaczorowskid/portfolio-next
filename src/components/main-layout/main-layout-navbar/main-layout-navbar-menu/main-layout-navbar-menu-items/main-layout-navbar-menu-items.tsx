@@ -10,8 +10,8 @@ const NAV_ITEMS = [
 
 export const MainLayoutNavbarMenuItems = () => (
   <div className="flex flex-col justify-center items-center gap-12 size-full">
-    {NAV_ITEMS.map((item, index) => (
-      <MainLayoutNavbarMenuLink key={index} item={item} />
+    {NAV_ITEMS.map((item) => (
+      <MainLayoutNavbarMenuLink key={item.section} item={item} />
     ))}
   </div>
 );

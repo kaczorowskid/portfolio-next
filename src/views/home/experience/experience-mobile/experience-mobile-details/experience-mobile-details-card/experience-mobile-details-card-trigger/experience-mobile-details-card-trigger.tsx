@@ -1,5 +1,5 @@
+import type { StaticImageData } from "next/image";
 import { AccordionTrigger } from "@/components/ui/accordion";
-import { StaticImageData } from "next/image";
 import { ExperienceMobileDetailsCardTriggerLogo } from "./experience-mobile-details-card-trigger-logo";
 import { ExperienceMobileDetailsCardTriggerMeta } from "./experience-mobile-details-card-trigger-meta";
 
