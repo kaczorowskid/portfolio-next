@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { cn } from "@/utils";
 import { ProjectsDetailsCounter } from "@/views/home/projects/shared/ui";
 
@@ -19,7 +19,7 @@ export const ProjectsDetailsItemWrapper = ({
     ref={setRef}
     className={cn(
       "transition-all duration-1000",
-      isHighlighted ? "text-white" : "text-gray-800"
+      isHighlighted ? "text-white" : "text-gray-800",
     )}
   >
     <div className="relative border-l pl-12 pb-6">

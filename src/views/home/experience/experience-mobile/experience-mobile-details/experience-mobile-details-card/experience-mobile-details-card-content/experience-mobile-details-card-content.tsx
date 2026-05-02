@@ -1,8 +1,8 @@
+import type { IconType } from "react-icons";
 import { AccordionContent } from "@/components/ui/accordion";
-import { ExperienceMobileDetailsCardContentDescription } from "./experience-mobile-details-card-content-description";
 import { ExperienceMobileDetailsCardContentAchievements } from "./experience-mobile-details-card-content-achievements";
+import { ExperienceMobileDetailsCardContentDescription } from "./experience-mobile-details-card-content-description";
 import { ExperienceMobileDetailsCardContentTechnologies } from "./experience-mobile-details-card-content-technologies";
-import { IconType } from "react-icons";
 
 type ExperienceMobileDetailsCardContentProps = {
   achievements: string[];

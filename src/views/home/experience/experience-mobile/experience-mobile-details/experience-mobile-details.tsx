@@ -5,7 +5,10 @@ import { ExperienceMobileDetailsCard } from "./experience-mobile-details-card";
 export const ExperienceMobileDetails = () => (
   <Accordion type="multiple">
     {EXPERIENCE_DATA.map((experience) => (
-      <ExperienceMobileDetailsCard key={experience.id} experience={experience} />
+      <ExperienceMobileDetailsCard
+        key={experience.id}
+        experience={experience}
+      />
     ))}
   </Accordion>
 );

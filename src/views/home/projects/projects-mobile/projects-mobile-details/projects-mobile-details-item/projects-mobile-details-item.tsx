@@ -1,7 +1,7 @@
 import { AccordionItem } from "@/components/ui/accordion";
-import { Project } from "../../../projects-details.data";
-import { ProjectsMobileDetailsItemTrigger } from "./experience-mobile-details-item-trigger";
+import type { Project } from "../../../projects-details.data";
 import { ProjectsMobileDetailsItemContent } from "./projects-mobile-details-item-content";
+import { ProjectsMobileDetailsItemTrigger } from "./projects-mobile-details-item-trigger";
 
 type ProjectsMobileDetailsItemProps = {
   project: Project;

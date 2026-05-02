@@ -1,3 +1,7 @@
+import type { StaticImageData } from "next/image";
+import type { IconType } from "react-icons";
+import { FaMicrochip } from "react-icons/fa";
+import { GiBearFace } from "react-icons/gi";
 import {
   SiAntdesign,
   SiArduino,
@@ -17,15 +21,9 @@ import {
   SiTypescript,
   SiVitest,
 } from "react-icons/si";
-import { FaMicrochip } from "react-icons/fa";
-import { GiBearFace } from "react-icons/gi";
-
-import { IconType } from "react-icons";
-import { StaticImageData } from "next/image";
-
+import board from "@/assets/images/board.png";
 import portfolio from "@/assets/images/portfolio.png";
 import smartHome from "@/assets/images/smart-home.png";
-import board from "@/assets/images/board.png";
 
 export type Project = {
   title: string;

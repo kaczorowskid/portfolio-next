@@ -1,9 +1,9 @@
-import { ComponentProps, ReactNode } from "react";
+import type { ComponentProps, ReactNode } from "react";
 
 import { cn } from "@/utils";
-import { PageSectionTitle } from "./page-section-title";
-import { PageSectionInset } from "./page-section-inset";
 import { PageSectionContent } from "./page-section-content";
+import { PageSectionInset } from "./page-section-inset";
+import { PageSectionTitle } from "./page-section-title";
 
 type Variant = "white" | "black";
 
@@ -26,7 +26,7 @@ export const PageSection = ({
     {...props}
     className={cn(
       "w-full flex flex-col items-center",
-      MAP_VARIANT_TO_TAILWIND_CLASS[variant]
+      MAP_VARIANT_TO_TAILWIND_CLASS[variant],
     )}
   >
     {children}

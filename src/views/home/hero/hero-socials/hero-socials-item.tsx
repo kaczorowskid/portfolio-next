@@ -1,6 +1,6 @@
-import { Badge } from "@/components";
 import Link from "next/link";
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
+import { Badge } from "@/components";
 
 type HeroSocialsItemProps = {
   href: string;

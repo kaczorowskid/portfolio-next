@@ -1,5 +1,5 @@
-import programming from "@/assets/images/programming.svg";
 import Image from "next/image";
+import programming from "@/assets/images/programming.svg";
 
 export const HeroImage = () => (
   <div className="flex-1 flex justify-center">

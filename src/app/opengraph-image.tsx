@@ -1,5 +1,5 @@
-import { SITE_DESCRIPTION, SITE_TITLE } from "@/constants";
 import { ImageResponse } from "next/og";
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/constants";
 
 export const alt = SITE_TITLE;
 export const size = { width: 1200, height: 630 };

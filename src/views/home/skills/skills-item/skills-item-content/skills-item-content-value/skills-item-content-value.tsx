@@ -1,7 +1,7 @@
-import { Color } from "../../skills-item.types";
-import { SkillsItemContentValueItem } from "./skills-item-content-value-item";
+import type { IconType } from "react-icons";
+import type { Color } from "../../skills-item.types";
 import { SkillsItemContentValueComment } from "./skills-item-content-value-comment";
-import { IconType } from "react-icons";
+import { SkillsItemContentValueItem } from "./skills-item-content-value-item";
 
 type SkillsItemContentValueProps = {
   color: Color;

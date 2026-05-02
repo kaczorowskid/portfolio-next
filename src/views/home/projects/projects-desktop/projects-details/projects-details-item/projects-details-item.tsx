@@ -1,4 +1,4 @@
-import { Project } from "../../../projects-details.data";
+import type { Project } from "../../../projects-details.data";
 import { ProjectsDetailsItemDescription } from "./projects-details-item-description";
 import { ProjectsDetailsItemHeader } from "./projects-details-item-header";
 import { ProjectsDetailsItemTechnologies } from "./projects-details-item-technologies";

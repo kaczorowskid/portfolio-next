@@ -29,8 +29,8 @@ const ABOUT_ITEMS = [
 
 export const AboutList = () => (
   <div className="max-w-6xl mx-auto grid items-center md:grid-cols-2 gap-x-12 gap-y-8 text-left">
-    {ABOUT_ITEMS.map((item, index) => (
-      <AboutItem key={index} item={item} />
+    {ABOUT_ITEMS.map((item) => (
+      <AboutItem key={item.highlightedContent} item={item} />
     ))}
   </div>
 );

@@ -21,8 +21,8 @@ const SOCIALS = [
 
 export const MainLayoutFooterLinks = () => (
   <div className="text-gray-400 flex gap-2">
-    {SOCIALS.map(({ href, name, social }, index) => (
-      <Fragment key={index}>
+    {SOCIALS.map(({ href, name, social }) => (
+      <Fragment key={social}>
         <Link
           href={href}
           target="_blank"

@@ -1,5 +1,5 @@
+import type { ReactNode } from "react";
 import { cn } from "@/utils";
-import { ReactNode } from "react";
 
 type BadgeProps = {
   color?: "black" | "white";
@@ -19,7 +19,9 @@ export const Badge = ({
           <span className="[&_svg]:w-4 md:[&_svg]:w-5">{leftSection}</span>
         </span>
       )}
-      <span className="text-xs md:text-sm font-bold text-black">{children}</span>
+      <span className="text-xs md:text-sm font-bold text-black">
+        {children}
+      </span>
     </div>
   </div>
 );

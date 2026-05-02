@@ -1,3 +1,7 @@
+import type { StaticImageData } from "next/image";
+import type { IconType } from "react-icons";
+import { FaJava } from "react-icons/fa";
+import { GiBearFace } from "react-icons/gi";
 import {
   SiAntdesign,
   SiCss,
@@ -18,13 +22,8 @@ import {
   SiTypescript,
   SiVitest,
 } from "react-icons/si";
-import { FaJava } from "react-icons/fa";
-import { GiBearFace } from "react-icons/gi";
-import { IconType } from "react-icons";
-import { StaticImageData } from "next/image";
-
-import cybLogo from "@/assets/logos/codeyourbrand_logo.jpeg";
 import codetainLogo from "@/assets/logos/codetain_logo.jpeg";
+import cybLogo from "@/assets/logos/codeyourbrand_logo.jpeg";
 
 export type Experience = {
   id: string;

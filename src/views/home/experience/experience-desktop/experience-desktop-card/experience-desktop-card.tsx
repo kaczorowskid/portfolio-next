@@ -1,8 +1,8 @@
+import type { Experience } from "../../experience.data";
 import { ExperienceDesktopCardAchievements } from "./experience-desktop-card-achievements";
 import { ExperienceDesktopCardDescription } from "./experience-desktop-card-description";
 import { ExperienceDesktopCardHeader } from "./experience-desktop-card-header";
 import { ExperienceDesktopCardTechnologies } from "./experience-desktop-card-technologies";
-import { Experience } from "../../experience.data";
 
 type ExperienceDesktopCardProps = {
   experience: Experience;

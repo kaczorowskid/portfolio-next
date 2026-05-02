@@ -1,5 +1,5 @@
-import { ProjectsMobileDetails } from "./projects-mobile-details";
 import { PageSection } from "@/components";
+import { ProjectsMobileDetails } from "./projects-mobile-details";
 
 export const ProjectsMobile = () => (
   <PageSection variant="black">

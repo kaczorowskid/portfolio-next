@@ -1,9 +1,9 @@
-import { Color } from "../skills-item.types";
+import type { IconType } from "react-icons";
+import type { Color } from "../skills-item.types";
 import { SkillsItemContentArray } from "./skills-item-content-array";
 import { SkillsItemContentCode } from "./skills-item-content-code";
 import { SkillsItemContentConst } from "./skills-item-content-const";
 import { SkillsItemContentValue } from "./skills-item-content-value";
-import { IconType } from "react-icons";
 
 export type SkillsItemContentProps = {
   technology: string;
