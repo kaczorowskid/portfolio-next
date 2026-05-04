@@ -1,20 +1,21 @@
 import Link from "next/link";
 import { Fragment } from "react";
+import { CONTACT_EMAIL, CONTACT_GITHUB, CONTACT_LINKEDIN } from "@/constants";
 
 const SOCIALS = [
   {
     name: "Email",
-    href: "mailto:kaczorowskid97@gmail.com",
+    href: `mailto:${CONTACT_EMAIL}`,
     social: "email",
   },
   {
     name: "Github",
-    href: "https://github.com/kaczorowskid",
+    href: CONTACT_GITHUB,
     social: "github",
   },
   {
     name: "Linkedin",
-    href: "https://linkedin.com/in/damiankaczorowski",
+    href: CONTACT_LINKEDIN,
     social: "linkedin",
   },
 ];

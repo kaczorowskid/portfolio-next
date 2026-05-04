@@ -1,3 +1,4 @@
+export { CONTACT_EMAIL, CONTACT_GITHUB, CONTACT_LINKEDIN } from "./contact";
 export {
   SITE_AUTHOR,
   SITE_DESCRIPTION,
