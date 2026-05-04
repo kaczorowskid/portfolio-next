@@ -16,7 +16,9 @@ export default function NotFound() {
         The page you are looking for doesn&apos;t exist.
       </p>
       <Button variant="outline" asChild>
-        <Link href="/">Back to home</Link>
+        <Link href="/" data-umami-event="back-to-home-404">
+          Back to home
+        </Link>
       </Button>
     </section>
   );
