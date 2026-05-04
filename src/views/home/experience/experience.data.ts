@@ -48,7 +48,7 @@ export const EXPERIENCE_DATA: Experience[] = [
       "Proactively identified and resolved performance bottlenecks, significantly improving application stability and user experience",
       "Contributed to architectural decisions and technology choices, balancing scalability, performance, and development speed",
       "Built and integrated RESTful services using Spring Boot with modern frontend architecture",
-      "Conducted Code Reviews and ensuring code quality standards and architectural consistency throughout the project",
+      "Conducted code reviews and ensured code quality standards and architectural consistency throughout the project",
       "Mentored less experienced developers through meticulous code reviews and technical 1-on-1 sessions, focusing on architectural consistency and the adoption of best practices",
     ],
     company: "CodeYourBrand",
