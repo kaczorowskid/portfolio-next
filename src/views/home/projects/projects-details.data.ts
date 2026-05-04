@@ -39,7 +39,7 @@ export type Project = {
 
 export const PROJECTS_DETAILS_DATA: Project[] = [
   {
-    title: "Personal portfolio",
+    title: "Personal Portfolio",
     image: portfolio,
     description:
       "A personal portfolio website built with Next.js to showcase my projects, skills, and experience. Focused on clean design, smooth navigation, and responsiveness across all devices.",
@@ -79,7 +79,7 @@ export const PROJECTS_DETAILS_DATA: Project[] = [
     github: "https://github.com/kaczorowskid/smart-home-system",
   },
   {
-    title: "Ticket tracker",
+    title: "Ticket Tracker",
     image: board,
     description:
       "A simple issue tracking application inspired by Jira, built to manage tasks, boards, and workflows in a clear and intuitive way. It allows users to create and organize tickets, track their status, and get a quick overview of recent activity through a clean dashboard with basic statistics and notes. Designed as a lightweight tool for improving task management and productivity.",

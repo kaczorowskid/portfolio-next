@@ -52,9 +52,9 @@ export const SKILLS_DATA = {
       { name: "Spring Hibernate", icon: SiHibernate },
       { name: "Node.js", icon: SiNodedotjs },
       { name: "Nest.js", icon: SiNestjs },
-      { name: "express.js", icon: SiExpress },
+      { name: "Express.js", icon: SiExpress },
       { name: "PostgreSQL", icon: SiPostgresql },
-      { name: "Mongo DB", icon: SiMongodb },
+      { name: "MongoDB", icon: SiMongodb },
     ],
   },
   other: {
