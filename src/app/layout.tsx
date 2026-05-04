@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { JsonLdScript, MainLayout, UmamiScript } from "@/components";
+import { JsonLdScript, UmamiScript } from "@/components";
 import "./globals.css";
 import {
   SITE_AUTHOR,
@@ -68,7 +68,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <MainLayout>{children}</MainLayout>
+        {children}
         <UmamiScript />
         <JsonLdScript />
       </body>
