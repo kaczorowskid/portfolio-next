@@ -1,4 +1,11 @@
-import { SITE_AUTHOR, SITE_DESCRIPTION, SITE_URL } from "@/constants";
+import {
+  CONTACT_EMAIL,
+  CONTACT_GITHUB,
+  CONTACT_LINKEDIN,
+  SITE_AUTHOR,
+  SITE_DESCRIPTION,
+  SITE_URL,
+} from "@/constants";
 
 export const JsonLdScript = () => {
   const jsonLd = {
@@ -7,7 +14,7 @@ export const JsonLdScript = () => {
     name: SITE_AUTHOR,
     jobTitle: "Software Developer",
     url: SITE_URL,
-    email: "kaczorowskid97@gmail.com",
+    email: CONTACT_EMAIL,
     description: SITE_DESCRIPTION,
     knowsAbout: [
       "Java",
@@ -21,10 +28,7 @@ export const JsonLdScript = () => {
       "Tanstack Query",
       "Zustand",
     ],
-    sameAs: [
-      "https://github.com/kaczorowskid",
-      "https://linkedin.com/in/damiankaczorowski",
-    ],
+    sameAs: [CONTACT_GITHUB, CONTACT_LINKEDIN],
   };
 
   return (

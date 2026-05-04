@@ -1,25 +1,26 @@
 import { FaLinkedin } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { TbMail } from "react-icons/tb";
+import { CONTACT_EMAIL, CONTACT_GITHUB, CONTACT_LINKEDIN } from "@/constants";
 import { HeroSocialsItem } from "./hero-socials-item";
 
 const SOCIALS_ITEMS = [
   {
     name: "Email",
     icon: TbMail,
-    href: "mailto:kaczorowskid97@gmail.com",
+    href: `mailto:${CONTACT_EMAIL}`,
     social: "email",
   },
   {
     name: "Github",
     icon: SiGithub,
-    href: "https://github.com/kaczorowskid",
+    href: CONTACT_GITHUB,
     social: "github",
   },
   {
     name: "Linkedin",
     icon: FaLinkedin,
-    href: "https://linkedin.com/in/damiankaczorowski",
+    href: CONTACT_LINKEDIN,
     social: "linkedin",
   },
 ] as const;
