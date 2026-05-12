@@ -28,7 +28,7 @@ const ABOUT_ITEMS = [
 ];
 
 export const AboutList = () => (
-  <div className="max-w-6xl mx-auto grid items-center md:grid-cols-2 gap-x-12 gap-y-8 text-left">
+  <div className="max-w-6xl mx-auto grid items-center md:grid-cols-2 gap-x-12 gap-y-8 text-left bg-black text-white p-6 lg:p-12 rounded-4xl">
     {ABOUT_ITEMS.map((item) => (
       <AboutItem key={item.highlightedContent} item={item} />
     ))}

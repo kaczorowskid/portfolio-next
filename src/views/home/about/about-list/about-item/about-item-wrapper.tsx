@@ -14,7 +14,7 @@ export const AboutItemWrapper = ({
   }
 
   return (
-    <div className="pl-6 pt-2 pr-2 pb-2 border-l-8 border-l-green-600 bg-gray-50 rounded-xl">
+    <div className="pl-2 pt-2 pr-2 pb-2 border-l-8 border-l-green-600 rounded-xl ">
       {children}
     </div>
   );
