@@ -24,7 +24,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import { TbApi, TbBrandRedux, TbDeviceMobile } from "react-icons/tb";
+import { TbApi, TbBrandRedux, TbDeviceMobile, TbSql } from "react-icons/tb";
 
 export const SKILLS_DATA = {
   frontend: {
@@ -55,6 +55,7 @@ export const SKILLS_DATA = {
       { name: "Express.js", icon: SiExpress },
       { name: "PostgreSQL", icon: SiPostgresql },
       { name: "MongoDB", icon: SiMongodb },
+      { name: "SQL", icon: TbSql },
     ],
   },
   other: {

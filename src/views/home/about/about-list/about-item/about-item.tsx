@@ -11,13 +11,11 @@ type AboutItemProps = {
 
 export const AboutItem = ({
   item: { content, hasLine, highlightedContent },
-}: AboutItemProps) => {
-  return (
-    <AboutItemWrapper hasLine={hasLine}>
-      <AboutItemContent
-        content={content}
-        highlightedContent={highlightedContent}
-      />
-    </AboutItemWrapper>
-  );
-};
+}: AboutItemProps) => (
+  <AboutItemWrapper hasLine={hasLine}>
+    <AboutItemContent
+      content={content}
+      highlightedContent={highlightedContent}
+    />
+  </AboutItemWrapper>
+);
