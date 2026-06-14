@@ -16,7 +16,7 @@ export const MainLayoutNavbarButton = ({
     aria-expanded={isOpen}
     aria-controls={MAIN_LAYOUT_NAVBAR_MENU_ID}
     aria-label={isOpen ? "Close menu" : "Open menu"}
-    className="hidden fixed top-4 right-4 size-10 lg:top-7 lg:right-7 lg:size-13 bg-white mix-blend-difference rounded-full md:flex justify-center items-center font-bold z-50 flex-col cursor-pointer transition-all duration-500"
+    className="hidden fixed top-4 right-4 size-10 lg:top-7 lg:right-7 lg:size-13 bg-white mix-blend-difference rounded-full md:flex justify-center items-center font-bold z-110 flex-col cursor-pointer transition-all duration-500"
   >
     <div
       className={cn(

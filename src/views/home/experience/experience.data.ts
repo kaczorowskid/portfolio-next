@@ -56,7 +56,7 @@ export const EXPERIENCE_DATA: Experience[] = [
       "I worked as part of a team developing a complex web platform, taking on a role with significant ownership over code quality and technical direction. Beyond implementation, I was actively involved in shaping architectural approaches and team standards. Over time, I became a go-to person within the team, supporting other developers, contributing to technical decision-making, and ensuring consistency across the project.",
     id: "1",
     location: "Warszawa, Remote",
-    period: "02.2025 - Present",
+    period: "02.2025 - 04.2026",
     position: "Software Developer",
     logo: cybLogo,
     technologies: [
