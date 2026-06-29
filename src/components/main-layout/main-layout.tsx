@@ -9,11 +9,11 @@ type MainLayoutProps = {
 };
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
-  const isOpenToNewRole = env.NEXT_PUBLIC_OPEN_TO_NEW_ROLES === "yes";
+  const isOpenToNewRoles = env.NEXT_PUBLIC_OPEN_TO_NEW_ROLES === "yes";
 
   return (
     <>
-      {isOpenToNewRole && <MainLayoutBar />}
+      {isOpenToNewRoles && <MainLayoutBar />}
       <MainLayoutNavbar />
       <main>{children}</main>
       <MainLayoutFooter />
